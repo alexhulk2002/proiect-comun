@@ -1,26 +1,26 @@
 * {box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
   size: adjust 10px;
-  margin: auto;
+  
   
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
   height: 150px;
-  
-  
+  box-shadow: 2px 2px 20px #312f2f;
+  background-image: linear-gradient(white, rgb(218, 217, 217));
 }
 
 .topnav a {
     float: left;
-    display: block;
+  
     color: black;
     text-align: center;
     text-decoration: none;
@@ -41,10 +41,21 @@ body {
   color: black;
 }
 
-.topnav a.active {
+.active {
   
   color: white;
   border:0px solid rgb(240, 224, 0);
+  height: 100px;
+  display: flex;
+}
+
+.logo{
+  margin-top: 0px;
+  color: green;
+  font-family: cursive;
+  display: flex;
+  font-size: 60px;
+  text-shadow: 2px 2px 20px #312f2f;
 }
 
 .topnav input[type=text] {
@@ -57,7 +68,8 @@ body {
   border:0px solid rgb(0, 0, 0);
   position:absolute;
   left: 30%;
-  top:16%;
+  top:17%;
+  box-shadow: 1px 1px 15px rgb(195, 194, 194);
 }
 
 @media screen and (max-width: 100px) {
@@ -69,7 +81,6 @@ body {
     margin: 0;
     padding: 14px;
     border-radius:20px;
-    
   }
   
   .topnav, input[type=text] {
@@ -91,7 +102,8 @@ body {
   overflow-x: hidden;
   padding-top: 10px;
   float: left;
-  
+  box-shadow: 2px 2px 20px #312f2f;
+  margin-left: 0;
 }
 
 .sidenav .content{
@@ -99,26 +111,29 @@ body {
 }
 .sidenav b {
   width: 150px;
+  background-color: #86852f;
   padding: 6px 8px 6px 10px;
   text-decoration: none;
   font-size: 20px;
   color: #000000;
-  display: block;
+  display: flex;
   border-radius:15px;
-  margin-top: 10px;
+  margin:auto;
   margin-bottom: 10px;
   transition: color 0.5s ease-out;
-
+  
+  
 }
 
 .sidenav b:hover {
   color: #f1f1f1;
+  background-color: aqua;
 }
 
 .main {
   margin-left: 350px; 
   font-size: 16px; 
-  padding: 0px 10px;
+  padding: 0px 0px;
   
 }
 
@@ -135,7 +150,7 @@ body {
 
 .results{
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .res{
@@ -144,4 +159,8 @@ body {
 .offerimg {
     width: 200px;
     height: 150px;
+}
+.prezentare{
+  margin: 0px 0px 0px 0px;
+  width: 500px;
 }
