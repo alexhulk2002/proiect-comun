@@ -1,14 +1,11 @@
 * {box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
   size: adjust 10px;
-  
-  
 }
 
 .topnav {
@@ -16,11 +13,13 @@ body {
   height: 150px;
   box-shadow: 2px 2px 20px #312f2f;
   background-image: linear-gradient(white, rgb(218, 217, 217));
-}
+  top: 0;
+  position: fixed;
+  width: 100%;
+ }
 
 .topnav a {
     float: left;
-  
     color: black;
     text-align: center;
     text-decoration: none;
@@ -30,19 +29,17 @@ body {
   }
 
 .user {
-    background-color: #86852f;
+    background-color: #0059fd;
     padding: 14px 14px;
     position: absolute;
     right: 0%;
 }
 
 .topnav a:hover {
-  
   color: black;
 }
 
 .active {
-  
   color: white;
   border:0px solid rgb(240, 224, 0);
   height: 100px;
@@ -63,12 +60,12 @@ body {
   padding-left: 15px;
   border: none;
   font-size: 18px;
-  width: 350px;
-  border-radius:20px;
-  border:0px solid rgb(0, 0, 0);
-  position:absolute;
-  left: 30%;
-  top:17%;
+  width: 400px;
+  border-radius: 20px;
+  border: 0px solid rgb(0, 0, 0);
+  position: absolute;
+  left: 40%;
+  top: 80%;
   box-shadow: 1px 1px 15px rgb(195, 194, 194);
 }
 
@@ -84,34 +81,32 @@ body {
   }
   
   .topnav, input[type=text] {
-   
-    border-radius:20px;
-     
-  } 
-
-  
+    border-radius:20px;  
+  }
 }
 
 .sidenav {
-  
   width: 300px;
   z-index: 1;
-  top: 0;
+  top: 16.1%;
   left: 0;
   background-color: rgb(14, 134, 233);
   overflow-x: hidden;
   padding-top: 10px;
   float: left;
-  box-shadow: 2px 2px 20px #312f2f;
+  box-shadow: 0px 20px 30px #424141;
   margin-left: 0;
+  height: 100%;
+  position: fixed;
 }
 
 .sidenav .content{
   margin-bottom: 15px;
 }
+
 .sidenav b {
   width: 150px;
-  background-color: #86852f;
+  background-color: #0073f7;
   padding: 6px 8px 6px 10px;
   text-decoration: none;
   font-size: 20px;
@@ -121,8 +116,6 @@ body {
   margin:auto;
   margin-bottom: 10px;
   transition: color 0.5s ease-out;
-  
-  
 }
 
 .sidenav b:hover {
@@ -134,7 +127,7 @@ body {
   margin-left: 350px; 
   font-size: 16px; 
   padding: 0px 0px;
-  
+  margin-top: 200px;
 }
 
 .mani {
@@ -151,15 +144,22 @@ body {
 .results{
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(202, 202, 202);
 }
 
 .res{
     display:flex;
 }
+
 .offerimg {
     width: 200px;
     height: 150px;
+    border: 2px solid white;
+    border-radius: 4px;
 }
+
 .prezentare{
   margin: 0px 0px 0px 0px;
   width: 500px;
