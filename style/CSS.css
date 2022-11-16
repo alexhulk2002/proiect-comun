@@ -90,7 +90,7 @@ body {
   z-index: 1;
   top: 16.1%;
   left: 0;
-  background-color: rgb(14, 134, 233);
+  background-color: rgb(192, 192, 192);
   overflow-x: hidden;
   padding-top: 10px;
   float: left;
@@ -106,7 +106,7 @@ body {
 
 .sidenav b {
   width: 150px;
-  background-color: #0073f7;
+  background-color: #ffffff;
   padding: 6px 8px 6px 10px;
   text-decoration: none;
   font-size: 20px;
@@ -145,8 +145,9 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 2px 2px 2px 2px #858585;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(255, 255, 255);
     margin-top: 10px;
+    border-radius: 4px;
 }
 
 .res{
