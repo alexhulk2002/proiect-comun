@@ -144,9 +144,9 @@ body {
 .results{
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #858585;
     background-color: rgb(202, 202, 202);
+    margin-top: 10px;
 }
 
 .res{
