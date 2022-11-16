@@ -4,22 +4,23 @@
 
 body {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Nunito', sans-serif;
   size: adjust 10px;
 }
 
 .topnav {
-  overflow: hidden;
-  height: 150px;
-  box-shadow: 2px 2px 20px #312f2f;
-  background-image: linear-gradient(white, rgb(218, 217, 217));
+  overflow: visible;
+  height: 100px;
+  box-shadow: 2px 2px 20px rgba(128, 47, 3, 0.311);
+  background-color: white;
   top: 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
+  background-image:linear-gradient(white, rgba(141, 46, 46, 0.15));
  }
 
 .topnav a {
-    float: left;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -28,11 +29,21 @@ body {
     transition: background-color 0.5s ease-out;
   }
 
+.slogan{
+  top: -120%;
+  text-align: center;
+  color:black;
+  position: relative;
+}
+
 .user {
     background-color: #0059fd;
+    width: 50px;
+    height: 50px;
     padding: 14px 14px;
     position: absolute;
     right: 0%;
+    top: 0%;
 }
 
 .topnav a:hover {
@@ -44,6 +55,7 @@ body {
   border:0px solid rgb(240, 224, 0);
   height: 100px;
   display: flex;
+  width: fit-content;
 }
 
 .logo{
@@ -52,7 +64,7 @@ body {
   font-family: cursive;
   display: flex;
   font-size: 60px;
-  text-shadow: 2px 2px 20px #312f2f;
+  text-shadow: 2px 2px 10px rgba(4, 4, 4, 0.25);
 }
 
 .topnav input[type=text] {
@@ -65,7 +77,7 @@ body {
   border: 0px solid rgb(0, 0, 0);
   position: absolute;
   left: 40%;
-  top: 80%;
+  top: 60%;
   box-shadow: 1px 1px 15px rgb(195, 194, 194);
 }
 
@@ -87,14 +99,14 @@ body {
 
 .sidenav {
   width: 300px;
-  z-index: 1;
-  top: 16.1%;
+  z-index: -1;
+  top: 100px;
   left: 0;
-  background-color: rgb(192, 192, 192);
+  background-color: white;
   overflow-x: hidden;
-  padding-top: 10px;
   float: left;
-  box-shadow: 0px 20px 30px #424141;
+  box-shadow: 0px 0px 30px rgba(4, 4, 4, 0.1);
+
   margin-left: 0;
   height: 100%;
   position: fixed;
@@ -114,6 +126,7 @@ body {
   display: flex;
   border-radius:15px;
   margin:auto;
+  margin-top: 5px;
   margin-bottom: 10px;
   transition: color 0.5s ease-out;
 }
