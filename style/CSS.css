@@ -51,7 +51,7 @@ body {
     height: 50px;
     padding: 14px 14px;
     position: absolute;
-    right: 0%;
+    right: 0.4%;
     top: 0%;
     background-image:linear-gradient(rgb(140, 150, 207), rgba(39, 129, 51, 0.288));
     box-shadow: 2px 2px 2px 2px #858585;
