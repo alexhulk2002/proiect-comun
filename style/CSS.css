@@ -29,6 +29,15 @@ body {
     transition: background-color 0.5s ease-out;
   }
 
+.topnav c {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius:25px;
+    transition: background-color 0.5s ease-out;
+  }
+
 .slogan{
   top: -120%;
   text-align: center;
@@ -37,17 +46,20 @@ body {
 }
 
 .user {
-    background-color: #0059fd;
-    width: 50px;
+    background-color: #aeb8ca;
+    width: 60px;
     height: 50px;
     padding: 14px 14px;
     position: absolute;
     right: 0%;
     top: 0%;
+    background-image:linear-gradient(rgb(140, 150, 207), rgba(39, 129, 51, 0.288));
+    box-shadow: 2px 2px 2px 2px #858585;
 }
 
-.topnav a:hover {
-  color: black;
+.topnav c:hover {
+  color: rgb(255, 253, 253);
+  transition: color 0.5s ease-out;
 }
 
 .active {
@@ -102,11 +114,10 @@ body {
   z-index: -1;
   top: 100px;
   left: 0;
-  background-color: white;
+  background-image:linear-gradient(rgb(245, 245, 245), rgba(163, 79, 79, 0.39));
   overflow-x: hidden;
   float: left;
-  box-shadow: 0px 0px 30px rgba(4, 4, 4, 0.1);
-
+  box-shadow: 0px 0px 30px rgba(143, 143, 143, 0.1);
   margin-left: 0;
   height: 100%;
   position: fixed;
@@ -125,7 +136,7 @@ body {
   color: #000000;
   display: flex;
   border-radius:15px;
-  margin:auto;
+  margin: auto;
   margin-top: 5px;
   margin-bottom: 10px;
   transition: color 0.5s ease-out;
