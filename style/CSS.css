@@ -3,6 +3,7 @@
 }
 
 body {
+  width: 1920px;
   margin: 0;
   font-family: 'Nunito', sans-serif;
   size: adjust 10px;
@@ -29,35 +30,33 @@ body {
     transition: background-color 0.5s ease-out;
   }
 
-.topnav c {
-    color: black;
+.slogan{
+  top: -10px;
+  left:560px;
+  color:rgb(188, 71, 73);
+  position: absolute;
+  width:max-content;
+}
+
+.user {
+  color: black;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     border-radius:25px;
     transition: background-color 0.5s ease-out;
-  }
-
-.slogan{
-  top: -120%;
-  text-align: center;
-  color:rgb(188, 71, 73);
-  position: relative;
-}
-
-.user {
     background-color: #aeb8ca;
     width: 60px;
     height: 50px;
     padding: 14px 14px;
     position: absolute;
-    right: 0.4%;
-    top: 0%;
+    left: 1450px;
+    top: 0px;
     background-image:linear-gradient(rgb(242, 232, 207), rgba(106, 153, 78));
     box-shadow: 2px 2px 2px 2px #858585;
 }
 
-.topnav c:hover {
+.topnav .user:hover {
   color: rgb(255, 253, 253);
   transition: color 0.5s ease-out;
 }
@@ -88,8 +87,8 @@ body {
   border-radius: 20px;
   border: 0px solid rgb(0, 0, 0);
   position: absolute;
-  left: 40%;
-  top: 60%;
+  left: 600px;
+  top: 60px;
   box-shadow: 1px 1px 15px rgb(195, 194, 194);
 }
 
@@ -146,8 +145,24 @@ body {
   color: #f1f1f1;
   background-color: rgb(106, 153, 78);
 }
+.filtre {
+  padding-left: 10px;
+  margin: 0;
+}
+.liste{
+  display: inline;
+  margin: 0;
+  padding: 10px;
+}
 
+.liste li{
+  display: inline;
+}
+input{
+  display: inline;
+}
 .main {
+  width: 1100px;
   margin-left: 350px; 
   font-size: 16px; 
   padding: 0px 0px;
@@ -195,4 +210,7 @@ body {
 }
 .adress:hover{
   color:red;
+}
+p {
+  margin: 0;
 }
