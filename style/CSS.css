@@ -3,7 +3,7 @@
 }
 
 body {
-  width: 1920px;
+  
   margin: 0;
   font-family: 'Nunito', sans-serif;
   size: adjust 10px;
@@ -17,7 +17,7 @@ body {
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   background-image:linear-gradient(rgb(242, 232, 207), rgba(167, 201, 87));
  }
 
@@ -110,7 +110,7 @@ body {
 
 .sidenav {
   width: 300px;
-  z-index: -1;
+  z-index: 1;
   top: 100px;
   left: 0;
   background-image:linear-gradient(rgb(242, 232, 207), rgba(167, 201, 87));
@@ -152,21 +152,36 @@ body {
 .liste{
   display: inline;
   margin: 0;
-  padding: 10px;
+  
+  padding: 0px;
+  align-content: center;
+  align-items: center;
+
 }
 
 .liste li{
   display: inline;
+  align-content: center;
+  align-items: center;
 }
 input{
   display: inline;
 }
 .main {
   width: 1100px;
-  margin-left: 350px; 
+  margin-left: 300px; 
   font-size: 16px; 
   padding: 0px 0px;
-  margin-top: 200px;
+  margin-top: 150px;
+}
+.content1 {
+margin-left: 50px;
+}
+footer{
+  background-color: rgb(56,102,65);
+  height: 70px;
+  width: auto;
+  margin-left: 300px;
 }
 
 .mani {
@@ -187,10 +202,12 @@ input{
     background-color: rgb(255, 255, 255);
     margin-top: 10px;
     border-radius: 4px;
+    display:flex;
 }
 
 .res{
     display:flex;
+    text-decoration: none;
 }
 
 .offerimg {
@@ -205,6 +222,10 @@ input{
   width: 500px;
 }
 
+h2{
+ color: #000000;
+}
+
 .adress{
   color: green;
 }
@@ -213,4 +234,13 @@ input{
 }
 p {
   margin: 0;
+}
+.login{
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100px;
+  box-shadow: 0px 0px 30px rgba(143, 143, 143, 0.1);
+  border-radius: 4px;
 }
