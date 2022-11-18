@@ -15,6 +15,7 @@ body {
   box-shadow: 2px 2px 20px rgba(128, 47, 3, 0.311);
   background-color: white;
   top: 0;
+  margin: auto;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -39,7 +40,7 @@ body {
 }
 
 .user {
-  color: black;
+    color: black;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
@@ -50,10 +51,12 @@ body {
     height: 50px;
     padding: 14px 14px;
     position: absolute;
-    left: 1450px;
+    left: 1845px;
     top: 0px;
     background-image:linear-gradient(rgb(242, 232, 207), rgba(106, 153, 78));
     box-shadow: 2px 2px 2px 2px #858585;
+    display: flex;
+    margin: auto;
 }
 
 .topnav .user:hover {
@@ -134,7 +137,7 @@ body {
   font-size: 20px;
   color: #000000;
   display: flex;
-  border-radius:15px;
+  border-radius: 15px;
   margin: auto;
   margin-top: 6px;
   margin-bottom: 10px;
@@ -169,7 +172,7 @@ input{
 }
 .main {
   width: 1100px;
-  margin-left: 300px; 
+  margin-left: 350px; 
   font-size: 16px; 
   padding: 0px 0px;
   margin-top: 150px;
