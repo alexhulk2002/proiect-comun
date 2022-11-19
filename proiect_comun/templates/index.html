@@ -1,0 +1,111 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.gstatic.com " rel="preconnect" />
+<link
+href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="{% static 'CSS.css' %}">
+</head>
+<body>
+
+<div class="topnav" >
+  <a class="active" href="#" style="display:flex ;">
+    <img src="{% static 'img/2-removebg.png' %}" height="100px">
+    <h1 class="logo">HAHA</h1>
+  </a>
+  <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
+  <input type="text" placeholder="Search" >
+  <a class="user" href="user">User</a>
+</div>
+
+<aside class="sidenav mani">
+  <div class="sidenav content" style="box-shadow: 0px 0px 30px rgb(116, 116, 116)">
+  <h3 class="filtre">Numar de persoane</h3>
+  <ul class="liste">
+    <li><label> copii </label><input type="text" style="width: 24px;"> </li>
+    <li><label> adulti </label><input type="text" style="width: 24px;"> </li>
+  </ul>
+  <h3 class="filtre">Tip cazare</h3>
+  <ul class="liste">
+    <li><input type="radio"><label>hotel</label></li>
+    <li><input type="radio"><label>pensiune</label></li>
+    <li><input type="radio"><label>motel</label></li>
+    <br>
+    <li><input type="radio"><label>apartament</label></li>
+    <li><input type="radio"><label>gazda</label></li>
+    
+  </ul>
+  <h3 class="filtre">Filtre</h3>
+  <b style="background-color:rgb(155, 155, 155); margin-top: 15px;" href="#">About</b>
+  <b style="background-color:rgb(155, 155, 155)" href="#">Services</b>
+  <b style="background-color:rgb(155, 155, 155)" href="#">Clients</b>
+  <b style="background-color:rgb(155, 155, 155)" href="#">Contact</b>
+  </div>
+</aside>
+
+<div class="main">
+  <div class="content1">
+    <h2>Sidebar</h2>
+    <p>This sidebar is of full height (100%) and always shown.</p>
+    <p>Scroll down the page to see the result.</p>
+    <div class="results">
+      <a class="res" href="#">
+        <img class="offerimg" src="{% static 'img/render_1.jpg' %}" alt="">
+        <div class="prezentare">
+          <h2>Titlu</h2>
+          <a class="adress" href="{% static 'login.html' %}"><p>adresa</p></a>
+          <p>PENSIUNEA CASA NOASTRĂ, clasificată de Ministerul Turismului încă din anul 2000, a fost printre primele unități de cazare apărute pe Valea Arieșului.</p>
+        </div>
+      </a>
+    </div>
+    <div class="results">
+      <a class="res">
+        <img class="offerimg" src="{% static 'img/render_1.jpg' %}" alt="">
+        <div class="prezentare">
+          <h2>Titlu</h2>
+          <p>PENSIUNEA CASA NOASTRĂ, clasificată de Ministerul Turismului încă din anul 2000, a fost printre primele unități de cazare apărute pe Valea Arieșului.</p>
+        </div>
+      </a>
+    </div>
+    <div class="results">
+      <a class="res">
+        <img class="offerimg" src="{% static 'img/render_1.jpg' %}" alt="">
+        <div class="prezentare">
+          <h2>Titlu</h2>
+          <p>PENSIUNEA CASA NOASTRĂ, clasificată de Ministerul Turismului încă din anul 2000, a fost printre primele unități de cazare apărute pe Valea Arieșului.</p>
+        </div>
+      </a>
+    </div>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+    
+  </div>
+  
+</div>
+<footer>
+  <div>
+    <p>
+    phone number=0755607714
+    </p>
+  </div>
+</footer>
+</body>
+</html>
