@@ -131,7 +131,7 @@ body {
 }
 
 .sidenav b {
-  width: 150px;
+  width: 170px;
   background-color: #ffffff;
   padding: 6px 8px 6px 10px;
   text-decoration: none;
@@ -143,24 +143,33 @@ body {
   margin-top: 6px;
   margin-bottom: 10px;
   transition: color 0.5s ease-out;
+  margin-left: 30px;
 }
 
 .sidenav b:hover {
   color: #f1f1f1;
   background-color: rgb(106, 153, 78);
 }
+
 .filtre {
   padding-left: 10px;
   margin: 0;
 }
+
+.filtre1{
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 4px solid rgb(128, 128, 128);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #505050;
+}
+
 .liste{
   display: inline;
   margin: 0;
-  
   padding: 0px;
   align-content: center;
   align-items: center;
-
 }
 
 .liste li{
@@ -168,9 +177,11 @@ body {
   align-content: center;
   align-items: center;
 }
+
 input{
   display: inline;
 }
+
 .main {
   width: 1100px;
   margin-left: 350px; 
@@ -178,8 +189,10 @@ input{
   padding: 0px 0px;
   margin-top: 150px;
 }
+
 .content1 {
 margin-left: 50px;
+
 }
 footer{
   background-color: rgb(56,102,65);
@@ -233,18 +246,43 @@ h2{
 .adress{
   color: green;
 }
+
 .adress:hover{
   color:red;
 }
+
 p {
   margin: 0;
 }
+
 .login{
   align-self: center;
   align-content: center;
   align-items: center;
   height: 300px;
-  width: 100px;
-  box-shadow: 0px 0px 30px rgba(143, 143, 143, 0.1);
-  border-radius: 4px;
+  width: 240px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.527);
+  border-radius: 10px;
+  margin-left: 740px;
+  margin-top: 100px;
+  border: 3px solid rgba(188, 71, 73, 0.678);
+  background-image: linear-gradient(rgb(242, 232, 207), rgb(106, 153, 78), rgb(106, 153, 78), rgb(242, 232, 207));
+  position: absolute;
+  text-align: center;
 }
+
+.imglogin{
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgb(242, 232, 207), rgb(106, 153, 78), rgb(106, 153, 78), rgb(242, 232, 207));
+}
+
+ .loginnow{
+  text-shadow: 4px 4px 4px 4px black;
+ }
+
+ .box{
+  border-radius: 4px;
+ }

@@ -1,0 +1,3 @@
+C:\Users\bgigi\OneDrive\Desktop\proiect-comun\app\Scripts\activate.bat
+cd C:\Users\bgigi\OneDrive\Desktop\proiect-comun\proiect_comun
+py manage.py runserver

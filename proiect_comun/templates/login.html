@@ -12,20 +12,17 @@ rel="stylesheet"
 <link rel="stylesheet" href="{% static 'CSS.css' %}">
   <title>Document</title>
 </head>
-<body>
+<body class="imglogin">
   <div class="login">
-    <h1>login now</h1>
-
-  
-
-  <form action="login" method="POST">
+    <h1 class="loginnow">Login now</h1>
+   <form action="login" method="POST">
     {% csrf_token %}
-    <p>username:</p>
-    <input type="text" name="username" />
-    <p>password</p>
-    <input type="password" name="password" /><br />
+    <p>Username:</p>
+    <input class="box" type="text" name="username" />
+    <p>Password</p>
+    <input class="box" type="password" name="password" /><br />
     <input type="submit" />
-  </form>
+   </form>
   </div>
 </body>
 </html>
