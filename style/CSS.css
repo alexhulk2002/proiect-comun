@@ -1,5 +1,6 @@
 * {box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -51,12 +52,12 @@ body {
     height: 50px;
     padding: 14px 14px;
     position: absolute;
-    left: 1845px;
+    left: 1445px;
     top: 0px;
     background-image:linear-gradient(rgb(242, 232, 207), rgba(106, 153, 78));
     box-shadow: 2px 2px 2px 2px #858585;
     display: flex;
-    margin: auto;
+    
 }
 
 .topnav .user:hover {
