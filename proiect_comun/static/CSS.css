@@ -256,23 +256,29 @@ p {
   margin: 0;
 }
 
+.imglogin{
+  width: fit-content;
+  height: fit-content;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgb(242, 232, 207), rgb(106, 153, 78), rgb(106, 153, 78), rgb(242, 232, 207));
+}
+
 .container{
-  top: 50%;
-  display: flex;
-    align-items: center;
-    justify-content: center;
   position: relative;
 }
+.center{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px,-150px);
+}
 .login{
-  position:absolute;
   align-self: center;
   align-content: center;
   align-items: center;
   height: 300px;
   width: 240px;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,0%);
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.527);
   border-radius: 10px;
   
@@ -282,13 +288,6 @@ p {
   text-align: center;
 }
 
-.imglogin{
-  width: auto;
-  height: auto;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: linear-gradient(rgb(242, 232, 207), rgb(106, 153, 78), rgb(106, 153, 78), rgb(242, 232, 207));
-}
 
  .loginnow{
   text-shadow: 4px 4px 4px 4px black;
