@@ -1,11 +1,12 @@
 * {box-sizing: border-box;
   scroll-behavior: smooth;
-  
+  margin: 0;
+  padding: 0;
 }
 
 body {
   
-  margin: 0;
+  
   font-family: 'Nunito', sans-serif;
   size: adjust 10px;
 }
@@ -255,16 +256,26 @@ p {
   margin: 0;
 }
 
+.container{
+  top: 50%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  position: relative;
+}
 .login{
+  position:absolute;
   align-self: center;
   align-content: center;
   align-items: center;
   height: 300px;
   width: 240px;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,0%);
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.527);
   border-radius: 10px;
-  margin-left: 740px;
-  margin-top: 100px;
+  
   border: 3px solid rgba(188, 71, 73, 0.678);
   background-image: linear-gradient(rgb(242, 232, 207), rgb(106, 153, 78), rgb(106, 153, 78), rgb(242, 232, 207));
   position: absolute;

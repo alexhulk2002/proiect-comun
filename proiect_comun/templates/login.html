@@ -13,16 +13,18 @@ rel="stylesheet"
   <title>Document</title>
 </head>
 <body class="imglogin">
-  <div class="login">
-    <h1 class="loginnow">Login now</h1>
-   <form action="login" method="POST">
-    {% csrf_token %}
-    <p>Username:</p>
-    <input class="box" type="text" name="username" />
-    <p>Password</p>
-    <input class="box" type="password" name="password" /><br />
-    <input type="submit" />
-   </form>
+  <div class="container">
+    <div class="login">
+      <h1 class="loginnow">Login now</h1>
+      <form action="login" method="POST">
+        {% csrf_token %}
+        <p>Username:</p>
+        <input class="box" type="text" name="username" />
+        <p>Password</p>
+        <input class="box" type="password" name="password" /><br />
+        <input type="submit" />
+      </form>
+    </div>
   </div>
 </body>
 </html>
