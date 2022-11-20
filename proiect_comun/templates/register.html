@@ -14,34 +14,34 @@ rel="stylesheet"
   <title>Document</title>
 </head>
 <body class="imglogin">
- <div class="container">
- <div class="center"> 
- <div class="login">
-   <h1>Sign Up Below</h1>
+  <div class=" container">
+    <div class="center">
+      <div class="login">
+        <h1>Sign Up Below</h1>
 
-   <style>
-    h5 {
-    color: red;
-    }
-   </style>
-   {% for message in messages %}
-   <h5>{{message}}</h5>
-   {% endfor %}
- 
-   <form method="POST" action="register">
-    {% csrf_token %}
-    <p>Username:</p>
-    <input class="box" type="text" name="username" />
-    <p>Email:</p>
-    <input class="box" type="email" name="email" />
-    <p>Password:</p>
-    <input class="box" type="password" name="password" />
-    <p>Repeat password:</p>
-    <input class="box" type="password" name="password2" /><br />
-    <input type="submit" />
-   </form>
- </div>
- </div>
- </div>
+        <style>
+        h5 {
+          color: red;
+        }
+        </style>
+        {% for message in messages %}
+        <h5>{{message}}</h5>
+        {% endfor %}
+      
+        <form method="POST" action="register">
+        {% csrf_token %}
+        <p>Username:</p>
+        <input class="box" type="text" name="username" />
+        <p>Email:</p>
+        <input class="box" type="email" name="email" />
+        <p>Password:</p>
+        <input class="box" type="password" name="password" />
+        <p>Repeat password:</p>
+        <input class="box" type="password" name="password2" /><br />
+        <input type="submit" />
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
