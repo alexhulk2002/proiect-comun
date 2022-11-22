@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+from .models import Cazare
 
 # Create your views here.
 
@@ -64,5 +65,5 @@ def user(request):
     return render(request, 'user.html')
 
 def cazare(request):
-
-    return render(request, 'cazare.html')
+    cazare1 = Cazare.objects.all()
+    return render(request, 'cazare.html',{'cazare': cazare1})
