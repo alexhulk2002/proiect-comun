@@ -54,16 +54,18 @@ rel="stylesheet"
     <h2>Sidebar</h2>
     <p>This sidebar is of full height (100%) and always shown.</p>
     <p>Scroll down the page to see the result.</p>
+    {% for inf in cazare %}
     <div class="results">
       <a class="res" href="#">
-        <img class="offerimg" src="{% static 'img/render_1.jpg' %}" alt="">
+        <img class="offerimg" src="{{inf.photos}}" alt="">
         <div class="prezentare">
-          <h2 href="cazare">Titlu</h2>
-          <a href="#" class="adress">adresa</a>
-          <p>PENSIUNEA CASA NOASTRĂ, clasificată de Ministerul Turismului încă din anul 2000, a fost printre primele unități de cazare apărute pe Valea Arieșului.</p>
+          <h2 href="cazare">{{inf.title}}</h2>
+          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+          <p>{{inf.description}}</p>
         </div>
       </a>
     </div>
+    {% endfor %}
     <div class="results">
       <a class="res">
         <img class="offerimg" src="{% static 'img/render_1.jpg' %}" alt="">

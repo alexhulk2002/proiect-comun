@@ -7,8 +7,8 @@ from .models import Cazare
 # Create your views here.
 
 def index(request):
-
-    return render(request, 'index.html')
+    cazare1 = Cazare.objects.all()
+    return render(request, 'index.html',{'cazare': cazare1})
 
 
 def register(request):
