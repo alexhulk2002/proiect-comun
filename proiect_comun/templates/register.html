@@ -13,35 +13,34 @@ rel="stylesheet"
 <link rel="stylesheet" href="{% static 'CSS.css' %}">
   <title>Document</title>
 </head>
-<body class="imglogin">
-  <div class=" container">
-    <div class="center">
-      <div class="login">
-        <h1>Sign Up Below</h1>
-
-        <style>
-        h5 {
-          color: red;
-        }
-        </style>
-        {% for message in messages %}
-        <h5>{{message}}</h5>
-        {% endfor %}
-      
-        <form method="POST" action="register">
-        {% csrf_token %}
-        <p>Username:</p>
-        <input class="box" type="text" name="username" />
-        <p>Email:</p>
-        <input class="box" type="email" name="email" />
-        <p>Password:</p>
-        <input class="box" type="password" name="password" />
-        <p>Repeat password:</p>
-        <input class="box" type="password" name="password2" /><br />
-        <input type="submit" />
-        </form>
+<body>
+  <div class="login-box">
+    <h2>Register</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
       </div>
-    </div>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Repeat password</label>
+      </div>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+    </form>
   </div>
 </body>
 </html>

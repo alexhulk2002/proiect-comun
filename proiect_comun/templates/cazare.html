@@ -22,24 +22,15 @@ rel="stylesheet"
   <a class="user"  href="#">User</a>
 </div>
 
-<aside class="sidenav mani">
-  <div class="sidenav content" style="box-shadow:none">
-  <b style="background-color:rgb(119, 119, 119)" href="#">About</b>
-  <b style="background-color:rgb(119, 119, 119)" href="#">Services</b>
-  <b style="background-color:rgb(119, 119, 119)" href="#">Clients</b>
-  <b style="background-color:rgb(119, 119, 119)" href="#">Contact</b>
-  </div>
-</aside>
-
 <div class="main">
-  <h1> Casa Tei</h1>
-  <a class="adress" href="#">
+  <h1>{{cazare.title}}</h1>
+  <a class="adress" href="{{cazare.adresa}}">
     <p>adresa</p>
   </a>
   <div class="images">
-    <img src="{% static 'img/mam.jpg' %}" style="width:250px; height: 250px;"/>
+    <img src="{{cazare.photos}}" style="width:250px; height: 250px;"/>
   </div>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, beatae aliquid. At voluptatibus id expedita. Molestiae, tempore. Quos ab vel officiis sapiente beatae magni pariatur! Quis consectetur vitae ut exercitationem.</p>
+  <p>{{cazare.description}}</p>
 </div>
 
 </body>

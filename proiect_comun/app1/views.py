@@ -64,6 +64,6 @@ def user(request):
 
     return render(request, 'user.html')
 
-def cazare(request):
-    cazare1 = Cazare.objects.all()
-    return render(request, 'cazare.html',{'cazare': cazare1})
+def cazare(request,pk):
+    cazare = Cazare.objects.get(id=pk)
+    return render(request, 'cazare.html',{'cazare': cazare})

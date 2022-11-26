@@ -8,5 +8,5 @@ urlpatterns=[
     path('login', views.login, name='login'),
     path('logout', views.logout, name='logout'),
     path('user', views.user, name='user'),
-    path('cazare', views.cazare, name='cazare')
+    path('cazare/<str:pk>', views.cazare, name='cazare')
 ]
