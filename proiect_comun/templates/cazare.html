@@ -1,14 +1,18 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.gstatic.com" rel="preconnect" />
-<link
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
 href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
 rel="stylesheet"
 />
 <link rel="stylesheet" href="{% static 'CSS.css' %}">
+  <title>Document</title>
 </head>
 <body>
   
@@ -30,14 +34,16 @@ rel="stylesheet"
 </div>
 
 <div class="main">
-  <h1>{{cazare.title}}</h1>
-  <a class="adress" href="{{cazare.adresa}}">
-    <p>adresa</p>
-  </a>
-  <div class="images">
-    <img src="{{cazare.photos}}" style="width:250px; height: 250px;"/>
-  </div>
-  <p>{{cazare.description}}</p>
+  <div class="results1">
+   <h1>{{cazare.title}}</h1>
+   <a class="adress" href="{{cazare.adresa}}">
+     <p>adresa</p>
+   </a>
+   <div class="images">
+     <img class="offerimg" src="{{cazare.photos}}" style="width:250px; height: 250px;"/>
+   </div>
+   <p>{{cazare.description}}</p>
+</div>
 </div>
 
 </body>
