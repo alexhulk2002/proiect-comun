@@ -5,8 +5,6 @@
 }
 
 body {
-  
-  
   font-family: 'Nunito', sans-serif;
   size: adjust 10px;
 }
@@ -19,7 +17,7 @@ body {
 .topnav {
   overflow: visible;
   height: 100px;
-  box-shadow: 2px 2px 20px rgba(128, 47, 3, 0.311);
+  box-shadow: 2px 2px 20px rgb(0, 0, 0);
   background-color: white;
   top: 0;
   margin: auto;
@@ -43,7 +41,7 @@ body {
   font-family: cursive;
   display: flex;
   font-size: 60px;
-  text-shadow: 2px 2px 10px rgba(4, 4, 4, 0.25);
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 
 .slogan{
@@ -149,7 +147,7 @@ body {
   background-image:linear-gradient(rgb(242, 232, 207), rgba(167, 201, 87));
   overflow-x: hidden;
   float: left;
-  box-shadow: 0px 0px 30px rgba(143, 143, 143, 0.1);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0);
   margin-left: 0;
   height: 100%;
   position: fixed;
@@ -202,7 +200,7 @@ body {
   margin-right: 8px;
   border: 4px solid rgb(128, 128, 128);
   border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px #505050;
+  box-shadow: 3px 3px 3px 3px #000000;
 }
 
 .liste{
@@ -225,15 +223,16 @@ input{
 
 
 /*================   index.html ===============*/
-.main {
+.main{
   width: 1100px;
   margin-left: 350px; 
   font-size: 16px; 
   padding: 0px 0px;
-  margin-top: 150px;
+  margin-top: 200px;
+  scroll-behavior: smooth;
 }
 
-.content1 {
+.content1{
 margin-left: 50px;
 
 }
@@ -241,7 +240,7 @@ margin-left: 50px;
 .results{
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 2px 2px 2px 2px #858585;
+    box-shadow: 2px 2px 2px 2px #000000;
     background-color: rgb(255, 255, 255);
     margin-top: 10px;
     border-radius: 4px;
