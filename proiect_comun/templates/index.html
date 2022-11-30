@@ -16,45 +16,48 @@ rel="stylesheet"
 </head>
 <body>
 <div class="topnav" >
-  <a class="active" href="#" style="display:flex ;">
+  <a class="active" href="/" style="display:flex ;">
     <img src="{% static 'img/2-removebg.png' %}" height="100px">
     <h1 class="logo">HAHA</h1>
   </a>
-  <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
+  <div class="center_topnav">
+    <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
   <input type="text" placeholder="Search" >
+  </div>
   <div class="dropdown">
-    <div><button class="dropbtn">User</button></a>
-    <div class="dropdown-content">
-      <a href="user"><b href="user">User Info</b><a>
-      <b href="#">Link 2</b>
-      <b href="#" style="color:red" >LOG OUT</b>
-    </div>
+    <button class="dropbtn">User</button>
+      <div class="dropdown-content">
+        <a href="user"><b href="user">User Info</b><a>
+        <b href="#">Switch User</b>
+        <a href="login"><b href="login" style="color:red" >LOG OUT</b></a>
+      </div>
   </div>
 </div>
 <aside class="sidenav mani">
   <div class="sidenav content" style="box-shadow: 0px 0px 30px rgb(116, 116, 116)">
     <div>
-    <b style="background-color:rgb(188, 71, 73);; margin-top: 15px;" href="#">About</b>
-    <b style="background-color:rgb(188, 71, 73);" href="#">Services</b>
-    <b style="background-color:rgb(188, 71, 73);" href="#">Clients</b>
-    <b style="background-color:rgb(188, 71, 73);" href="#">Contact</b>
+      <b style="background-color:rgb(188, 71, 73);; margin-top: 15px;" href="#">About</b>
+      <b style="background-color:rgb(188, 71, 73);" href="#">Services</b>
+      <b style="background-color:rgb(188, 71, 73);" href="#">Clients</b>
+      <b style="background-color:rgb(188, 71, 73);" href="#">Contact</b>
     </div>
-   <div class="filtre1">
-   <h3 class="filtre">Numar de persoane</h3>
-   <ul class="liste">
-    <li><label> copii </label><input type="text" style="width: 24px;"> </li>
-    <li><label> adulti </label><input type="text" style="width: 24px;"> </li>
-   </ul>
-   <h3 class="filtre">Tip cazare</h3>
-   <ul class="liste">
-    <li><input type="radio"><label>hotel</label></li>
-    <li><input type="radio"><label>pensiune</label></li>
-    <li><input type="radio"><label>motel</label></li>
-    <br>
-    <li><input type="radio"><label>apartament</label></li>
-    <li><input type="radio"><label>gazda</label></li> 
-   </ul>
-   <h3 class="filtre">Filtre</h3>
+    <div class="filtre1">
+      <h3 class="filtre">Numar de persoane</h3>
+      <ul class="liste">
+        <li><label> copii </label><input type="text" style="width: 24px;"> </li>
+        <li><label> adulti </label><input type="text" style="width: 24px;"> </li>
+      </ul>
+      <h3 class="filtre">Tip cazare</h3>
+      <ul class="liste">
+        <li><input type="radio"><label>hotel</label></li>
+        <li><input type="radio"><label>pensiune</label></li>
+        <li><input type="radio"><label>motel</label></li>
+        <br>
+        <li><input type="radio"><label>apartament</label></li>
+        <li><input type="radio"><label>gazda</label></li> 
+      </ul>
+      <h3 class="filtre">Filtre</h3>
+    </div>
   </div>
 </aside>
 <div class="main">
