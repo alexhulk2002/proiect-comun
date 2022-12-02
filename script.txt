@@ -1,0 +1,27 @@
+$(function() {
+    $('#showDropdown').click(function() {
+        var $drop = $('.dropdown');
+        $drop.css({'position': $('#positioning').val()});
+        $drop.toggle();
+    });
+});
+
+.dropdown {
+    position: relative;
+    display: none;
+    background: #fff;
+    width: 300px;
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<button id="showDropdown">dropdown</button>
+
+<div class="dropdown">
+    <ul>
+        <li>test 1</li>
+        <li>test 2</li>
+    </ul>
+</div>
+<div>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+</div>

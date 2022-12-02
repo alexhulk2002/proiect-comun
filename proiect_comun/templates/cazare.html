@@ -15,24 +15,24 @@ rel="stylesheet"
   <title>Document</title>
 </head>
 <body>
-  
-<div class="topnav">
-  <a class="active" href="/" style="display:flex ;">
-    <img src="{% static 'img/2-removebg.png' %}" height="100px">
-    <h1 class="logo">HAHA</h1>
-  </a>
-  <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
-  <input type="text" placeholder="Search" >
-  <div class="dropdown">
-    <div><button class="dropbtn">User</button></a>
-    <div class="dropdown-content">
-      <b href="#">Link 1</b>
-      <b href="#">Link 2</b>
-      <b href="#">Link 3</b>
+  <div class="topnav" >
+    <a class="active" href="/" style="display:flex ;">
+      <img src="{% static 'img/2-removebg.png' %}" height="100px">
+      <h1 class="logo">HAHA</h1>
+    </a>
+    <div class="center_topnav">
+      <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
+    <input type="text" placeholder="Search" >
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">User</button>
+        <div class="dropdown-content">
+          <a href="user"><b href="user">User Info</b><a>
+          <b href="#">Switch User</b>
+          <a href="login"><b href="login" style="color:red" >LOG OUT</b></a>
+        </div>
     </div>
   </div>
-</div>
-
 <div class="main">
   <div class="results1">
    <h1>{{cazare.title}}</h1>
