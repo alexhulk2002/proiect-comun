@@ -245,16 +245,27 @@ input{
 
 
 /*================   index.html ===============*/
+.in{
+  margin-left: 300px;
+}
+
+.in1{
+  margin-left: 10px;
+}
+
 .main{
-  width: 1100px;
-  margin-left: 350px; 
+  width: auto;
+  margin-left: px;
+  margin-right: 10px;
   font-size: 16px; 
   padding: 0px 0px;
   margin-top: 150px;
 }
 
 .content1{
-margin-left: 50px;
+ margin-left: 50px;
+ text-align: justify;
+ text-justify: inter-word;
 }
 
 .results{
