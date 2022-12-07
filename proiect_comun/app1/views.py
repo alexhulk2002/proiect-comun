@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from .models import Cazare
+from .forms import newform
 
 # Create your views here.
 
@@ -74,3 +76,16 @@ def user(request):
 def cazare(request,pk):
     cazare = Cazare.objects.get(id=pk)
     return render(request, 'cazare.html',{'cazare': cazare})
+
+def new(request):
+    submitted = False
+    if request.method == "POST":
+        form = newform(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/new?submitted=True')
+    else:
+        form = newform
+        if 'submitted' in request.GET:
+            submitted = True
+    return render(request, 'new.html', {'form' : form, 'submitted' : submitted })
