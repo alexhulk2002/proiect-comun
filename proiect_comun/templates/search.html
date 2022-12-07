@@ -62,6 +62,11 @@ rel="stylesheet"
 </aside>
 <div class="in main">
   <div class="content1">
+    {% if searched %}
+      <h1>You searched for {{ searched }}</h1>
+    {% else %}
+      <h1> Hey! you forgot to search</h1>
+    {% endif %}
     <h2>Sidebar</h2>
     <p>This sidebar is of full height (100%) and always shown.</p>
     <p>Scroll down the page to see the result.</p>

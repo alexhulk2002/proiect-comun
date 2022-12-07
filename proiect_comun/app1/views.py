@@ -58,7 +58,14 @@ def logout(request):
     return redirect('/')
 
 def search(request):
-    return render(request, 'search.html')
+    if request.method == "POST":
+        searched =request.POST['searched']
+        posts = Cazare.objects.filter(title__icontains =searched)
+        return render(request, 'search.html',
+        {'searched':searched,
+        'cazare':posts})
+    else:
+        return render(request, 'search.html')
     
 def user(request):
 

@@ -22,7 +22,11 @@ rel="stylesheet"
   </a>
   <div class="center_topnav">
     <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
-  <input type="text" placeholder="Search" >
+    <form class="search-form" method=POST action="{% url 'search' %}">
+      {% csrf_token %}
+      <input type="search" placeholder="Search" name="searched">
+      
+    </form>
   </div>
   <div class="dropdown">
     <button class="dropbtn">User</button>
