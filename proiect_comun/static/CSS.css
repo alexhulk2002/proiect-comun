@@ -2,10 +2,11 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
   size: adjust 10px;
 }
 
@@ -35,7 +36,7 @@ div {
   height: 100px;
   box-shadow: 0px 0px 30px rgb(0, 0, 0);
   background-color: white;
-  width: 99.5%;
+  width: 100%;
   z-index: 2;
   display: flex;
   background-image: linear-gradient(rgb(106, 153, 78), rgb(167, 201, 87), rgb(167, 201, 87), rgb(106, 153, 78));
@@ -503,5 +504,49 @@ body {
   }
 }
 
+.InputBox{
+  position: relative;
+  width: 250px;
+  gap: 30px;
+  padding: 2px;
+}
 
+.InputBox input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  background: #F2E8CF;
+  color: black;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.InputBox span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: black;
+  transition: 0.5s;
+}
+
+.InputBox input:focus ~ span,
+.InputBox input:valid ~ span{
+  color: #6A994E;
+  transform: translateX(14px) translateY(-14px);
+  font-size: 1em;
+  padding: 0 8px;
+  background: #F2E8CF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  letter-spacing: 0.2em;
+}
+
+.InputBox input:focus,
+.InputBox input:valid{
+  background: #F2E8CF;
+}
 
