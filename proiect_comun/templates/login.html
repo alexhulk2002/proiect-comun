@@ -17,13 +17,17 @@ rel="stylesheet"
 <body>
   <div class="login-box">
     <h2>Login</h2>
-    <form>
+    {% for mesage in messages%}
+    <h5>{{mesage}}</h5>
+    {%endfor%}
+    <form action="login" method="POST">
+      {%csrf_token%}
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="username" required="">
         <label>Username</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input type="password" name="password" required="">
         <label>Password</label>
       </div>
       <a href="#">
@@ -31,7 +35,12 @@ rel="stylesheet"
         <span></span>
         <span></span>
         <span></span>
-        Submit
+        <input type="submit" 
+        style="text-decoration: none;
+        background: transparent;
+        border: none;
+        color: #F2E8CF;
+        font-size: 16px;"/>
       </a>
     </form>
   </div>
