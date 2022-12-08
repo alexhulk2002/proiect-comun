@@ -534,9 +534,6 @@ body {
 }
 
 .InputBox input:focus ~ span,
-.InputBox input:valid ~ span
-
-.InputBox input:focus ~ span,
 .InputBox input:valid ~ span{
   color: #6A994E;
   transform: translateX(14px) translateY(-14px);
@@ -551,5 +548,4 @@ body {
 .InputBox input:focus,
 .InputBox input:valid{
   background: #F2E8CF;
-
 }
