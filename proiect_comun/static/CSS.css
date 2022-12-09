@@ -548,3 +548,32 @@ body {
   background: #F2E8CF;
 }
 
+.collapsible {
+  background-color: #386641;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  transition: 0.5s;
+  
+}
+
+.active1, .collapsible:hover {
+  background-color: #386641;
+  transition: 0.5s;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #F2E8CF;
+  border-radius: 10px;
+  transition: 0.5s;
+}

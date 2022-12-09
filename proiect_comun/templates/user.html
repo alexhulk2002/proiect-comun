@@ -50,14 +50,32 @@ rel="stylesheet"
       <input type="text" required="required">
       <span>Alte detalii</span>
     </div>
-  <br>
-  <h1>Cazarile mele(facem un dropdown de la asta)</h1>
-  <h2>Cazare 1</h2>
-  <h2>Cazare 2</h2>
-  <br>
-  <h1>Rezervari</h1>
-  <h2>Cazare 1</h2>
-  <h2>Cazare 2</h2>
-</div>
+    <button type="button" class="collapsible">Cazarile mele</button>
+ <div class="content">
+   <h2>Cazare 1</h2>
+   <h2>Cazare 2</h2>
+ </div>  
+   <button type="button" class="collapsible">Rezervarile mele</button>
+ <div class="content">
+   <h2>Cazare 1</h2>
+   <h2>Cazare 2</h2>
+ </div>
+
+ <script>
+ var coll = document.getElementsByClassName("collapsible");
+ var i;
+
+ for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+ }
+ </script>
 </body>
 </html>
