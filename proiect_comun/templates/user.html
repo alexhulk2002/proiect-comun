@@ -50,43 +50,22 @@ rel="stylesheet"
       <input type="text" required="required">
       <span>Alte detalii</span>
     </div>
-  <br>
-  <h1>Cazarile mele(facem un dropdown de la asta)</h1>
-  <h2>Cazare 1</h2>
-  <h2>Cazare 2</h2>
-  <br>
-  <h1>Rezervari</h1>
-  <h2>Cazare 1</h2>
-  <h2>Cazare 2</h2>
-</div>
+    <button type="button" class="collapsible">Cazarile mele</button>
+ <div class="content">
+   <h2>Cazare 1</h2>
+   <h2>Cazare 2</h2>
+ </div>  
+   <button type="button" class="collapsible">Rezervarile mele</button>
+ <div class="content">
+   <h2>Cazare 1</h2>
+   <h2>Cazare 2</h2>
+ </div>
 
-<h2>Collapsibles</h2>
+ <script>
+ var coll = document.getElementsByClassName("collapsible");
+ var i;
 
-<p>A Collapsible:</p>
-<button type="button" class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<p>Collapsible Set:</p>
-<button type="button" class="collapsible">Open Section 1</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button type="button" class="collapsible">Open Section 2</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button type="button" class="collapsible">Open Section 3</button>
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
+ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active1");
     var content = this.nextElementSibling;
@@ -96,7 +75,7 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
-}
-</script>
-
+ }
+ </script>
+</body>
 </html>
