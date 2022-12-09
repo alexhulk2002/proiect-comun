@@ -175,7 +175,7 @@ div {
 
 
 .mani {
-  margin-top: -45px; 
+  margin-top: -50px; 
   font-size: 20px; 
   padding: 0px 0px;
 }
@@ -561,7 +561,6 @@ body {
   border-radius: 10px;
   border: 1px solid #000000;
   transition: 0.5s;
-  
 }
 
 .active1, .collapsible:hover {
@@ -569,11 +568,12 @@ body {
   transition: 0.5s;
 }
 
-.content {
+.content1 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #F2E8CF;
   border-radius: 10px;
   transition: 0.5s;
+  margin-left: 0px;
 }
