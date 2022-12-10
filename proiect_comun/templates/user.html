@@ -41,6 +41,18 @@ rel="stylesheet"
     <button type="button" class="collapsible">Cazarile mele</button>
  <div class="content3">
    <h1>Cazare 1</h1>
+   {% for inf in cazare %}
+    <div class="results">
+      <a class="res" href="/cazare/{{inf.id}}">
+        <img class="offerimg" src="{{inf.photos}}" alt="">
+        <div class="prezentare">
+          <h2 href="cazare">{{inf.title}}</h2>
+          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+          <p>{{inf.description|truncatewords:20}}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
    <h1>Cazare 2</h1>
  </div>  
    <button type="button" class="collapsible">Rezervarile mele</button>
@@ -56,11 +68,11 @@ rel="stylesheet"
  for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active1");
-    var content1 = this.nextElementSibling;
-    if (content1.style.display === "block") {
-      content1.style.display = "none";
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
     } else {
-      content1.style.display = "block";
+      content.style.display = "block";
     }
   });
  }
