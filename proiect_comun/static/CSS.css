@@ -170,7 +170,6 @@ div {
   box-shadow: 0 0 30px rgb(0, 0, 0);
   margin-left: 0;
   height: 100%;
-  
 }
 
 
@@ -245,7 +244,7 @@ input{
 
 /*================   index.html ===============*/
 .in{
-  margin-left: 300px;
+  margin-left: 320px;
 }
 
 .in1{
@@ -254,7 +253,6 @@ input{
 
 .main{
   width: auto;
-  margin-left: px;
   margin-right: 10px;
   font-size: 16px; 
   padding: 0px 0px;
@@ -262,9 +260,9 @@ input{
 }
 
 .content1{
- margin-left: 50px;
  text-align: justify;
  text-justify: inter-word;
+ margin-left: 320px;
 }
 
 .results{
@@ -502,65 +500,19 @@ body {
   }
 }
 
-.InputBox{
-  position: relative;
-  width: 250px;
-  gap: 30px;
-  padding: 2px;
-}
-
-.InputBox input{
-  width: 100%;
-  padding: 10px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  outline: none;
-  background: #F2E8CF;
-  color: black;
-  font-size: 1em;
-  transition: 0.5s;
-}
-
-.InputBox span{
-  position: absolute;
-  left: 0;
-  padding: 10px;
-  pointer-events: none;
-  font-size: 1em;
-  color: black;
-  transition: 0.5s;
-}
-
-.InputBox input:focus ~ span,
-.InputBox input:valid ~ span{
-  color: #6A994E;
-  transform: translateX(14px) translateY(-14px);
-  font-size: 1em;
-  padding: 0 8px;
-  background: #F2E8CF;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  letter-spacing: 0.2em;
-}
-
-.InputBox input:focus,
-.InputBox input:valid{
-  background: #F2E8CF;
-}
-
 .collapsible {
   background-color: #386641;
-  color: white;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   border-radius: 10px;
   border: 1px solid #000000;
   transition: 0.5s;
+  font-size: 16px;
 }
 
 .active1, .collapsible:hover {
@@ -568,12 +520,13 @@ body {
   transition: 0.5s;
 }
 
-.content1 {
+.content3 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #F2E8CF;
   border-radius: 10px;
   transition: 0.5s;
   margin-left: 0px;
+  font-size: 16px;
+  background: #F2E8CF;
 }
