@@ -25,7 +25,6 @@ rel="stylesheet"
     <form class="search-form" method=POST action="{% url 'search' %}">
       {% csrf_token %}
       <input type="search" placeholder="Search" name="searched">
-      
     </form>
   </div>
   <div class="dropdown">
