@@ -25,7 +25,6 @@ rel="stylesheet"
     <form class="search-form" method=POST action="{% url 'search' %}">
       {% csrf_token %}
       <input type="search" placeholder="Search" name="searched">
-      
     </form>
   </div>
   <div class="dropdown">
@@ -73,7 +72,7 @@ rel="stylesheet"
   </div>
 </aside>
 <div class="in main">
-  <div class="content3">
+  <div class="content">
     <h2>Sidebar</h2>
     <p>This sidebar is of full height (100%) and always shown.</p>
     <p>Scroll down the page to see the result.</p>
