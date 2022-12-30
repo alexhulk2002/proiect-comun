@@ -4,10 +4,19 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  color: #fff;
 }
 
+
 body {
+  background-image: url("img/nature_landscape_trees_forest_house_village_mountains_clouds-1781583.jpg");
   size: adjust 10px;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color:rgba(69, 69, 69, 0.8);
 }
 
 div {
@@ -39,7 +48,7 @@ div {
   width: 100%;
   z-index: 2;
   display: flex;
-  background-image: linear-gradient(rgb(106, 153, 78), rgb(167, 201, 87), rgb(167, 201, 87), rgb(106, 153, 78));
+  background-image: linear-gradient(rgba(224, 186, 75, 0.5), rgba(239, 112, 22, 0.5), rgba(239, 112, 22, 0.5), rgba(224, 186, 75, 0.5));
   align-items: center;
   justify-content: space-between;
   padding: left 10px;
@@ -81,9 +90,9 @@ div {
   border-radius: 20px;
   border: 0px solid rgb(0, 0, 0);
   box-shadow: 1px 1px 15px rgb(195, 194, 194);
+  color: gray;
 }
 .topnav input[type=text] {
-  
   padding-left: 15px;
   margin: 0 50%;
   transform: translate(-50%, 0);
@@ -93,6 +102,7 @@ div {
   border-radius: 20px;
   border: 0px solid rgb(0, 0, 0);
   box-shadow: 1px 1px 15px rgb(195, 194, 194);
+  color: gray;
 }
 
 .dropdown {
@@ -173,8 +183,7 @@ div {
   position: fixed;
   width: 300px;
   left: 0;
-  background-image: linear-gradient(rgb(106, 153, 78), rgb(167, 201, 87), rgb(167, 201, 87), rgb(106, 153, 78));
-  overflow-x: hidden;
+  background-image: linear-gradient(rgba(224, 186, 75, 0.5), rgba(239, 112, 22, 0.5), rgba(239, 112, 22, 0.5), rgba(224, 186, 75, 0.5));
   float: left;
   box-shadow: 0 0 30px rgb(0, 0, 0);
   margin-left: 0;
@@ -204,7 +213,7 @@ div {
   padding: 6px 8px 6px 10px;
   text-decoration: none;
   font-size: 20px;
-  color: #000000;
+
   display: flex;
   border-radius: 15px;
   margin: auto;
@@ -277,11 +286,13 @@ input{
  margin-left: 320px;
 }
 
+
+
 .results{
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 2px 2px 2px 2px #000000;
-    background-color: rgb(242, 232, 207);
+    background-color:rgba(141, 88, 51, 0.6);
     margin-top: 10px;
     border-radius: 4px;
     display:flex;
@@ -293,7 +304,7 @@ input{
     padding-left: 5px;
     padding-right: 5px;
     box-shadow: 2px 2px 2px 2px #000000;
-    background-color: rgb(242, 232, 207);
+    background-color: rgba(146, 166, 199, 0.8);
     margin-top: 10px;
     border-radius: 4px;
 }
@@ -313,10 +324,6 @@ input{
 .prezentare{
   margin: 0px 0px 0px 0px;
   width: 600px;
-}
-
-h2{
- color: #000000;
 }
 
 .adress{
@@ -346,14 +353,6 @@ html {
   height: 100%;
 }
 
-body {
-  margin:0;
-  padding:0;
-  font-family: sans-serif;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: linear-gradient(rgb(242, 232, 207), rgb(106, 153, 78), rgb(106, 153, 78), rgb(242, 232, 207));
-}
 
 .login-box {
   position: absolute;
@@ -362,7 +361,7 @@ body {
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(rgb(106, 153, 78), rgb(56, 102, 65), rgb(56, 102, 65), rgb(106, 153, 78));
+  background-image: linear-gradient(rgba(224, 186, 75, 0.5), rgba(239, 112, 22, 0.5), rgba(239, 112, 22, 0.5), rgba(224, 186, 75, 0.5));
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,6);
   border-radius: 10px;
