@@ -28,7 +28,11 @@ rel="stylesheet"
       </form>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">User</button>
+      {%if user.is_authenticated%}
+    <button class="dropbtn">{{user.username}}</button>
+    {%else%}
+    <button class="dropbtn">User</button>
+    {%endif%}
         <div class="dropdown-content">
           <a href="user"><b href="user">User Info</b><a>
           <b href="#">Switch User</b>
