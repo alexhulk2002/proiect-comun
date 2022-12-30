@@ -22,7 +22,10 @@ rel="stylesheet"
     </a>
     <div class="center_topnav">
       <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
-    <input type="text" placeholder="Search" >
+      <form class="search-form" method=POST action="{% url 'search' %}">
+        {% csrf_token %}
+        <input type="search" placeholder="Search" name="searched" class="search">
+      </form>
     </div>
     <div class="dropdown">
       <button class="dropbtn">User</button>
@@ -40,7 +43,6 @@ rel="stylesheet"
     <h1>Alte detalii</h1>
     <button type="button" class="collapsible">Cazarile mele</button>
  <div class="content3">
-   <h1>Cazare 1</h1>
    {% for inf in cazare %}
     <div class="results">
       <a class="res" href="/cazare/{{inf.id}}">
@@ -53,12 +55,21 @@ rel="stylesheet"
       </a>
     </div>
     {% endfor %}
-   <h1>Cazare 2</h1>
  </div>  
    <button type="button" class="collapsible">Rezervarile mele</button>
  <div class="content3">
-   <h1>Cazare 1</h1>
-   <h1>Cazare 2</h1>
+  {% for inf in cazare %}
+  <div class="results">
+    <a class="res" href="/cazare/{{inf.id}}">
+      <img class="offerimg" src="{{inf.photos}}" alt="">
+      <div class="prezentare">
+        <h2 href="cazare">{{inf.title}}</h2>
+        <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+        <p>{{inf.description|truncatewords:20}}</p>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
  </div>
   </div>
  <script>

@@ -40,12 +40,10 @@ div {
   z-index: 2;
   display: flex;
   background-image: linear-gradient(rgb(106, 153, 78), rgb(167, 201, 87), rgb(167, 201, 87), rgb(106, 153, 78));
-  
   align-items: center;
   justify-content: space-between;
   padding: left 10px;
 }
-
 
 .active {
   position: relative;
@@ -73,6 +71,17 @@ div {
   flex-wrap: nowrap;
 }
 
+.search{
+  padding-left: 15px;
+  margin: 0 50%;
+  transform: translate(-50%, 0);
+  border: none;
+  font-size: 18px;
+  width: 400px;
+  border-radius: 20px;
+  border: 0px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 15px rgb(195, 194, 194);
+}
 .topnav input[type=text] {
   
   padding-left: 15px;
@@ -257,6 +266,9 @@ input{
   font-size: 16px; 
   padding: 0px 0px;
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content1{
@@ -324,6 +336,7 @@ footer{
   height: 70px;
   width: auto;
   margin-left: 300px;
+  margin-top: auto;
 }
 
 
@@ -531,3 +544,16 @@ body {
   background: #F2E8CF;
 }
 
+.user-box input{
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  font-size: 24px ;
+}
+
+.user-box img{
+  width: 20px;
+  cursor: pointer;
+  mar
+}

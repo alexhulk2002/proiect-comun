@@ -70,8 +70,8 @@ def search(request):
         return render(request, 'search.html')
     
 def user(request):
-
-    return render(request, 'user.html')
+    cazare1 = Cazare.objects.all()
+    return render(request, 'user.html',{'cazare': cazare1})
 
 def cazare(request,pk):
     cazare = Cazare.objects.get(id=pk)
