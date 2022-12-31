@@ -286,8 +286,6 @@ input{
  margin-left: 320px;
 }
 
-
-
 .results{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -513,7 +511,7 @@ html {
 }
 
 .collapsible {
-  background-color: #386641;
+  background-color: rgba(224, 186, 75, 0.8);
   color: black;
   cursor: pointer;
   padding: 18px;
@@ -528,7 +526,7 @@ html {
 }
 
 .active1, .collapsible:hover {
-  background-color: #386641;
+  background-color: rgba(239, 112, 22, 0.8);
   transition: 0.5s;
 }
 
@@ -540,7 +538,7 @@ html {
   transition: 0.5s;
   margin-left: 0px;
   font-size: 16px;
-  background: #F2E8CF;
+  background: ;
 }
 
 .user-box input{
