@@ -234,11 +234,9 @@ div {
 }
 
 .filtre1{
-  margin-left: 8px;
-  margin-right: 8px;
-  border: 4px solid rgba(188, 71, 73, 0.521);
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px 3px #000000;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
 .liste{
@@ -267,6 +265,11 @@ input{
 
 .in1{
   margin-left: 10px;
+}
+
+.in2{
+  margin-left: -20px;
+  margin-top: 10px;
 }
 
 .main{
@@ -421,7 +424,7 @@ html {
 }
 
 .login-box a:hover {
-  background: #6A994E;
+  background: rgba(239, 112, 22);
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #F2E8CF,
