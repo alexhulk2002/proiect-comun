@@ -202,6 +202,30 @@ div {
   .sidenav b {font-size: 16px;}
 }
 
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
 
 .sidenav .content{
   margin-bottom: 15px;
@@ -259,6 +283,15 @@ input{
 
 
 /*================   index.html ===============*/
+.button{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.active1, .button:hover {
+  transition: 0.5s;
+}
+
 .in{
   margin-left: 320px;
 }
@@ -297,22 +330,25 @@ input{
     margin-top: 10px;
     border-radius: 4px;
     display:flex;
+    flex-wrap: wrap;
 }
 
 .results1{
+  width: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
     box-shadow: 2px 2px 2px 2px #000000;
-    background-color: rgba(146, 166, 199, 0.8);
+    background-color: rgba(141, 88, 51, 0.6);
     margin-top: 10px;
     border-radius: 4px;
-}
-
+    
+} 
 .res{
     display:flex;
     text-decoration: none;
+    
 }
 
 .offerimg {
@@ -325,6 +361,8 @@ input{
 .prezentare{
   margin: 0px 0px 0px 0px;
   width: 600px;
+  word-wrap: normal;
+  word-break: break-all;
 }
 
 .adress{
@@ -514,22 +552,17 @@ html {
 }
 
 .collapsible {
-  background-color: rgba(224, 186, 75, 0.8);
-  color: black;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
-  border: none;
   text-align: left;
   outline: none;
-  border-radius: 10px;
-  border: 1px solid #000000;
   transition: 0.5s;
-  font-size: 16px;
+  background: transparent;
+  border: none;
+
 }
 
 .active1, .collapsible:hover {
-  background-color: rgba(239, 112, 22, 0.8);
   transition: 0.5s;
 }
 
@@ -541,7 +574,6 @@ html {
   transition: 0.5s;
   margin-left: 0px;
   font-size: 16px;
-  background: ;
 }
 
 .user-box input{
@@ -555,4 +587,46 @@ html {
 .user-box img{
   width: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .hidden-text {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 950px) {
+  .small-search {
+    width: 230px;
+  }
+}
+
+@media (max-width: 950px) {
+  .sidenav {
+   display: none;
+  }
+  .in{
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  #logo {
+   height: 60%;
+  }
+}
+
+@media (max-width: 950px) {
+  .dropbtn {
+   font-size: 16px;
+   padding: 8px;
+  }
 }

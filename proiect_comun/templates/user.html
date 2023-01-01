@@ -18,10 +18,10 @@ rel="stylesheet"
   <div class="topnav" >
     <a class="active" href="/" style="display:flex ;">
       <img src="{% static 'img/2-removebg.png' %}" height="100px">
-      <h1 class="logo">HAHA</h1>
+      <h1 class="logo hidden-mobile">HAHA</h1>
     </a>
     <div class="center_topnav">
-      <h1 class="slogan">Gasiti cazare instant la orice ora</h1>
+      <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
       <form class="search-form" method=POST action="{% url 'search' %}">
         {% csrf_token %}
         <input type="search" placeholder="Search" name="searched" class="search">
@@ -44,9 +44,9 @@ rel="stylesheet"
     <h1>Nume: AndreiHalcu</h1>
     <h1>Email: andreihlc2007@gmail.com</h1>
     <h1>Nume utilizator: andreih</h1>
-    <h1>Alte detalii</h1>
-    <button type="button" class="collapsible">Cazarile mele</button>
- <div class="content3">
+    <h1>Alte detalii:</h1>
+    <button type="button" class="collapsible"><h1>Cazarile mele</h1><hr></button>
+  <div class="content3">
    {% for inf in cazare %}
     <div class="results">
       <a class="res" href="/cazare/{{inf.id}}">
@@ -60,7 +60,7 @@ rel="stylesheet"
     </div>
     {% endfor %}
  </div>  
-   <button type="button" class="collapsible">Rezervarile mele</button>
+   <button type="button" class="collapsible"><h1>Rezervarile mele</h1><hr></button>
  <div class="content3">
   {% for inf in cazare %}
   <div class="results">
@@ -75,7 +75,7 @@ rel="stylesheet"
   </div>
   {% endfor %}
  </div>
-  </div>
+ </div>
  <script>
  var coll = document.getElementsByClassName("collapsible");
  var i;
