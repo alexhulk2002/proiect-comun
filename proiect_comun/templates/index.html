@@ -20,6 +20,7 @@ rel="stylesheet"
     <img id="logo" src="{% static 'img/2-removebg.png' %}" height="100px">
     <h1 class="logo hidden-mobile">HAHA</h1>
   </a>
+  <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
   <div class="center_topnav">
     <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
     <form class="search-form" method=POST action="{% url 'search' %}">
@@ -81,7 +82,7 @@ rel="stylesheet"
 </aside>
 <div class="in main" id="in">
   <div class="content">
-    <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+    
     <h2>Sidebar</h2>
     <p>This sidebar is of full height (100%) and always shown.</p>
     <p>Scroll down the page to see the result.</p>
