@@ -224,7 +224,7 @@ div {
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color:;
 }
 
 .sidenav .content{
@@ -628,5 +628,14 @@ html {
   .dropbtn {
    font-size: 16px;
    padding: 8px;
+  }
+}
+
+@media (max-width: 950px) {
+  .openbtn {
+   z-index: 4;
+   position: absolute;
+   background: transparent;
+   margin-top: 50px;
   }
 }
