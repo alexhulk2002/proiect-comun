@@ -223,9 +223,7 @@ div {
   border: none;
 }
 
-.openbtn:hover {
-  background-color:;
-}
+
 
 .sidenav .content{
   margin-bottom: 15px;
@@ -638,4 +636,11 @@ html {
    background: transparent;
    margin-top: 50px;
   }
+}
+
+@media (min-width: 951px){
+  .openbtn {
+    display: none;
+  }
+  
 }
