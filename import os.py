@@ -1,5 +1,9 @@
 import os
 
+try:
+    os.system('cmd /k "cd.."')
+except:
+    print('error')
 
 try:
     os.system('cmd /k "app\\Scripts\\activate.bat"')
