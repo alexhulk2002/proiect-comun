@@ -80,7 +80,7 @@ def cazare(request,pk):
 def new(request):
     submitted = False
     if request.method == "POST":
-        form = newform(request.POST)
+        form = newform(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/new?submitted=True')
