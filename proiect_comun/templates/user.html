@@ -48,6 +48,7 @@ rel="stylesheet"
     <button type="button" class="collapsible"><h1>Cazarile mele</h1><hr></button>
   <div class="content3">
    {% for inf in cazare %}
+    {% if inf.author == user.email %}
     <div class="results">
       <a class="res" href="/cazare/{{inf.id}}">
         <img class="offerimg" src="{{inf.photos}}" alt="">
@@ -58,6 +59,7 @@ rel="stylesheet"
         </div>
       </a>
     </div>
+    {%endif%}
     {% endfor %}
  </div>  
    <button type="button" class="collapsible"><h1>Rezervarile mele</h1><hr></button>
