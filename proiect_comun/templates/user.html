@@ -33,11 +33,15 @@ rel="stylesheet"
     {%else%}
     <button class="dropbtn">User</button>
     {%endif%}
-        <div class="dropdown-content">
-          <a href="user"><b href="user">User Info</b><a>
-          <b href="#">Switch User</b>
-          <a href="login"><b href="login" style="color:red" >LOG OUT</b></a>
-        </div>
+    <div class="dropdown-content">
+      <a href="user"><b href="user">User Info</b></a>
+      <a href="new"><b href="new">Aduga cazare</b></a>
+      {%if user.is_authenticated%}
+      <a href="logout"><b href="logout" style="color:red" >Logout</b></a>
+      {%else%}
+      <a href="login"><b href="login" style="color:red" >Login or signup</b></a>
+      {%endif%}
+    </div>
     </div>
   </div>
   <div class="in1 main">
