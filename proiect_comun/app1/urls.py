@@ -10,4 +10,5 @@ urlpatterns=[
     path('user', views.user, name='user'),
     path('cazare/<str:pk>', views.cazare, name='cazare'),
     path('new', views.new, name='new')
+    path('main', views.main, name='main')
 ]
