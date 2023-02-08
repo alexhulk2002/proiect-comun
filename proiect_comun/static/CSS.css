@@ -656,3 +656,41 @@ html {
   outline: none;
   background: transparent;
 }
+
+/* ========= main ============*/
+
+.text{
+  z-index: 2;
+  font-size: 70px;
+  text-align: center;
+  color:yellow;
+}
+
+.i{
+  margin-left: 20px;  
+}
+
+.search1{
+  padding-left: 15px;
+  margin: 0 50%;
+  transform: translate(-50%, 0);
+  border: none;
+  font-size: 18px;
+  width: 600px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 15px rgb(195, 194, 194);
+  color: gray;
+}
+
+.text1{
+  font-size: 40px;
+  margin-top: 200px;
+  margin-left: 10px;
+}
+
+.casuta{
+  border: 3px solid rgb(0, 0, 0);
+}
+

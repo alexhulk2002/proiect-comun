@@ -23,10 +23,7 @@ rel="stylesheet"
   <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
   <div class="center_topnav">
     <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
-    <form class="search-form" method=POST action="{% url 'search' %}">
-      {% csrf_token %}
-      <input type="search" placeholder="Search" name="searched" class="search small-search">
-    </form>
+
   </div>
   <div class="dropdown">
     {%if user.is_authenticated%}
@@ -45,15 +42,48 @@ rel="stylesheet"
       </div>
   </div>
 </div>
-
+<h3 style=margin-top:100px;>Acest site este in dezvoltare!!!</h3>
+<div class="text">Unde dorești să te cazezi?</div>
+<form class="search-form" method=POST action="{% url 'search' %}">
+    {% csrf_token %}
+    <input type="search" placeholder="Caută orașul" name="searched" class="search1 small-search">
+</form>
+<div class="text1">Vezi cazari recente:</div>
+    {% for inf in cazare %}
+    <div class="results">
+      <a class="res" href="/cazare/{{inf.id}}">
+        <img class="offerimg" src="{{inf.photos}}" alt="">
+        <div class="prezentare">
+          <h2 href="cazare">{{inf.title}}</h2>
+          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+          <p>{{inf.description|truncatewords:20}}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    
+<div class="text1">Cazari apreciate:</div>
+    {% for inf in cazare %}
+    <div class="results">
+      <a class="res" href="/cazare/{{inf.id}}">
+        <img class="offerimg" src="{{inf.photos}}" alt="">
+        <div class="prezentare">
+          <h2 href="cazare">{{inf.title}}</h2>
+          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+          <p>{{inf.description|truncatewords:20}}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
   <footer class="in2">
     <div>
-      <p>
+      <p class="i">
       phone number=0755607714
       </p>
     </div>
   </footer>
 </div>
+
 <script><!--dropdown button-->
   var coll = document.getElementsByClassName("button");
   var i;
@@ -89,5 +119,6 @@ rel="stylesheet"
       document.getElementById("openbtn").style.display = "initial";
     }
     </script>
+
 </body>
 </html>
