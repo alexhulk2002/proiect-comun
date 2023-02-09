@@ -89,3 +89,7 @@ def new(request):
         if 'submitted' in request.GET:
             submitted = True
     return render(request, 'new.html', {'form' : form, 'submitted' : submitted })
+
+def main(request):
+    cazare1 = Cazare.objects.all()
+    return render(request, 'main.html',{'cazare': cazare1})
