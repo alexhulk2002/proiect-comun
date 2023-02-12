@@ -218,10 +218,11 @@ div {
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: transparent;
   color: white;
   padding: 10px 15px;
   border: none;
+  margin-left: -400px;
 }
 
 .sidenav .content{
@@ -634,6 +635,7 @@ html {
    position: absolute;
    background: transparent;
    margin-top: 50px;
+   margin-left: 10px;
   }
 }
 
@@ -641,7 +643,6 @@ html {
   .openbtn {
     display: none;
   }
-  
 }
 
 .new{
