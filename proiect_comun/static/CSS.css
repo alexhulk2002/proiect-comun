@@ -645,6 +645,18 @@ html {
   }
 }
 
+@media (max-width: 950px) {
+  .in1 {
+  font-size: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .search1 {
+  width: 300px;
+  }
+}
+
 .new{
   width: 100%;
   padding: 10px 0;

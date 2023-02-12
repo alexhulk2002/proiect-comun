@@ -46,7 +46,7 @@ rel="stylesheet"
 <div class="text">Unde dorești să te cazezi?</div>
 <form class="search-form" method=POST action="{% url 'search' %}">
     {% csrf_token %}
-    <input type="search" placeholder="Caută orașul" name="searched" class="search1 small-search">
+    <input type="search" placeholder="Caută orașul" name="searched" class="search1 small-search1">
 </form>
 <div class="text1">Vezi cazari recente:</div>
     {% for inf in cazare %}
