@@ -83,7 +83,7 @@ rel="stylesheet"
     </ul>
   </div>
 </aside>
-<div class="in main">
+<div class="in main" id="in">
   <div class="content">
     {% if searched %}
       <h1>You searched for {{ searched }}</h1>
@@ -105,14 +105,14 @@ rel="stylesheet"
    <br>
    <br>
   </div>
+  <footer class="in2">
+    <div>
+      <p>
+      phone number=0755607714
+      </p>
+    </div>
+  </footer>
 </div>
-<footer class="in2">
-  <div>
-    <p>
-    phone number=0755607714
-    </p>
-  </div>
-</footer>
 <script><!--dropdown button-->
   var coll = document.getElementsByClassName("button");
   var i;
@@ -135,7 +135,7 @@ rel="stylesheet"
       document.getElementById("in").style.marginLeft = "320px";
       document.getElementById("openbtn").style.display = "none";
       if (screen.width<=950) {
-      document.getElementById("in").style.display = "none";
+      document.getElementById("in").style.marginTop = "140px";
       }
       else{
       document.getElementById("in").style.marginLeft = "320px";
