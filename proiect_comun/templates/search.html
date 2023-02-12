@@ -15,58 +15,74 @@ rel="stylesheet"
   <title>Document</title>
 </head>
 <body>
-<div class="topnav" >
-  <a class="active" href="/" style="display:flex ;">
-    <img id="logo" src="{% static 'img/2-removebg.png' %}" height="100px">
-    <h1 class="logo hidden-mobile">HAHA</h1>
-  </a>
-  <div class="center_topnav">
-    <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
-    <form class="search-form" method=POST action="{% url 'search' %}">
-      {% csrf_token %}
-      <input type="search" placeholder="Search" name="searched" class="search small-search">
-    </form>
-  </div>
-  <div class="dropdown">
-    {%if user.is_authenticated%}
-    <button class="dropbtn">{{user.username}}</button>
-    {%else%}
-    <button class="dropbtn">User</button>
-    {%endif%}
-      <div class="dropdown-content">
-        <a href="user"><b href="user">User Info</b><a>
-        <b href="#">Switch User</b>
-        <a href="login"><b href="login" style="color:red" >LOG OUT</b></a>
-      </div>
-  </div>
-</div>
-<aside class="sidenav mani">
-  <div class="sidenav content" style="box-shadow: 0px 0px 30px rgb(116, 116, 116)">
-    <div>
-      <b style="background-color:rgb(188, 71, 73);; margin-top: 15px;" href="#">About</b>
-      <b style="background-color:rgb(188, 71, 73);" href="#">Services</b>
-      <b style="background-color:rgb(188, 71, 73);" href="#">Clients</b>
-      <b style="background-color:rgb(188, 71, 73);" href="#">Contact</b>
+  <div class="topnav" >
+    <a class="active" href="/" style="display:flex ;">
+      <img id="logo" src="{% static 'img/2-removebg.png' %}" height="100px">
+      <h1 class="logo hidden-mobile">HAHA</h1>
+    </a>
+    <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+    <div class="center_topnav">
+      <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
+      <form class="search-form" method=POST action="{% url 'search' %}">
+        {% csrf_token %}
+        <input type="search" placeholder="Search" name="searched" class="search small-search">
+      </form>
     </div>
-    <div class="filtre1">
-      <h3 class="filtre">Numar de persoane</h3>
-      <ul class="liste">
-        <li><label> copii </label><input type="text" style="width: 24px;"> </li>
-        <li><label> adulti </label><input type="text" style="width: 24px;"> </li>
-      </ul>
-      <h3 class="filtre">Tip cazare</h3>
-      <ul class="liste">
-        <li><input type="radio"><label>hotel</label></li>
-        <li><input type="radio"><label>pensiune</label></li>
-        <li><input type="radio"><label>motel</label></li>
-        <br>
-        <li><input type="radio"><label>apartament</label></li>
-        <li><input type="radio"><label>gazda</label></li> 
-      </ul>
-      <h3 class="filtre">Filtre</h3>
+    <div class="dropdown">
+      {%if user.is_authenticated%}
+      <button class="dropbtn">{{user.username}}</button>
+      {%else%}
+      <button class="dropbtn">User</button>
+      {%endif%}
+        <div class="dropdown-content">
+          <a href="user"><b href="user">User Info</b></a>
+          <a href="new"><b href="new">Aduga cazare</b></a>
+          {%if user.is_authenticated%}
+          <a href="logout"><b href="logout" style="color:red" >Logout</b></a>
+          {%else%}
+          <a href="login"><b href="login" style="color:red" >Login or signup</b></a>
+          {%endif%}
+        </div>
     </div>
   </div>
-</aside>
+  <aside class="sidenav mani" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <br>
+    <div class="filtre1">    
+    <h3 class="filtre">Numar de persoane</h3>
+        <ul class="liste">
+          <li><label> copii </label><input type="text" style="width: 24px;"> </li>
+          <li><label> adulti </label><input type="text" style="width: 24px;"> </li>
+        </ul>
+        <h3 class="filtre">Tip cazare</h3>
+        <ul class="liste">
+          <div><li><input type="checkbox"><label>hotel</label></li></div>
+          <div><li><input type="checkbox"><label>pensiune</label></li></div>
+          <div><li><input type="checkbox"><label>motel</label></li></div>
+          <div><li><input type="checkbox"><label>apartament</label></li></div>
+          <div><li><input type="checkbox"><label>gazda</label></li></div>
+        </ul>
+    <h3 class="filtre">Filtre:</h3>
+    <h4 type="button" class="button filtre">Camere</h4>
+    <div class="content3">
+      <ul class="liste">
+      <div><li><input type="checkbox"><label>o camera</label></li></div>
+      <div><li><input type="checkbox"><label>doua camere</label></li></div>
+      <div><li><input type="checkbox"><label>trei camere</label></li></div>
+      <div><li><input type="checkbox"><label>patru camere</label></li></div>
+      </ul>
+    </div>
+    <h4 type="button" class="button filtre">Rating</h4>
+    <div class="content3">
+      <ul class="liste">
+        <div><li><input type="checkbox"><label>5 stele</label></li></div>
+        <div><li><input type="checkbox"><label>4 stele</label></li></div>
+        <div><li><input type="checkbox"><label>3 stele</label></li></div>
+        <div><li><input type="checkbox"><label>2 stele</label></li></div>
+        <div><li><input type="checkbox"><label>1 stea</label></li></div>
+      </ul>
+    </div>
+  </aside>
 <div class="in main">
   <div class="content">
     {% if searched %}
@@ -97,5 +113,40 @@ rel="stylesheet"
     </p>
   </div>
 </footer>
+<script><!--dropdown button-->
+  var coll = document.getElementsByClassName("button");
+  var i;
+ 
+  for (i = 0; i < coll.length; i++) {
+   coll[i].addEventListener("click", function() {
+     this.classList.toggle("active1");
+     var content = this.nextElementSibling;
+     if (content.style.display === "block") {
+       content.style.display = "none";
+     } else {
+       content.style.display = "block";
+     }
+   });
+  }
+  </script>
+  <script><!--sidenav button-->
+    function openNav() {
+      document.getElementById("sidebar").style.display = "initial";
+      document.getElementById("in").style.marginLeft = "320px";
+      document.getElementById("openbtn").style.display = "none";
+      if (screen.width<=950) {
+      document.getElementById("in").style.display = "none";
+      }
+      else{
+      document.getElementById("in").style.marginLeft = "320px";
+      }
+    }
+    
+    function closeNav() {
+      document.getElementById("sidebar").style.display = "none";
+      document.getElementById("in").style.marginLeft= "10px";
+      document.getElementById("openbtn").style.display = "initial";
+    }
+    </script>
 </body>
 </html>
