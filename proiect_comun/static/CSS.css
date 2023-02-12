@@ -188,6 +188,7 @@ div {
   box-shadow: 0 0 30px rgb(0, 0, 0);
   margin-left: 0;
   height: 100%;
+  top: 140px;
 }
 
 
@@ -222,8 +223,6 @@ div {
   padding: 10px 15px;
   border: none;
 }
-
-
 
 .sidenav .content{
   margin-bottom: 15px;

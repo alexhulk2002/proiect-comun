@@ -119,7 +119,7 @@ rel="stylesheet"
      this.classList.toggle("active1");
      var content = this.nextElementSibling;
      if (content.style.display === "block") {
-       content.style.display = "none";
+       content.style.display = "initial";
      } else {
        content.style.display = "block";
      }
@@ -132,7 +132,7 @@ rel="stylesheet"
       document.getElementById("in").style.marginLeft = "320px";
       document.getElementById("openbtn").style.display = "none";
       if (screen.width<=950) {
-      document.getElementById("in").style.display = "none";
+      document.getElementById("in").style.marginTop = "140px";
       }
       else{
       document.getElementById("in").style.marginLeft = "320px";
