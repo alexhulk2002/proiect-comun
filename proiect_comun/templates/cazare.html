@@ -28,14 +28,18 @@ rel="stylesheet"
     </div>
     <div class="dropdown">
       {%if user.is_authenticated%}
-    <button class="dropbtn">{{user.username}}</button>
-    {%else%}
-    <button class="dropbtn">User</button>
-    {%endif%}
+      <button class="dropbtn">{{user.username}}</button>
+      {%else%}
+      <button class="dropbtn">User</button>
+      {%endif%}
         <div class="dropdown-content">
-          <a href="user"><b href="user">User Info</b><a>
-          <b href="#">Switch User</b>
-          <a href="login"><b href="login" style="color:red" >LOG OUT</b></a>
+          <a href="user"><b href="user">User Info</b></a>
+          <a href="new"><b href="new">Aduga cazare</b></a>
+          {%if user.is_authenticated%}
+          <a href="logout"><b href="logout" style="color:red" >Logout</b></a>
+          {%else%}
+          <a href="login"><b href="login" style="color:red" >Login or signup</b></a>
+          {%endif%}
         </div>
     </div>
   </div>
@@ -43,12 +47,14 @@ rel="stylesheet"
   <div class="results1">
    <h1>{{cazare.title}}</h1>
    <a class="adress" href="{{cazare.adresa}}">
-     <p>adresa</p>
+     <p>Arata pe harta</p>
    </a>
    <div class="images">
      <img class="offerimg" src="{{cazare.photos.url}}" style="width:250px; height: 250px;"/>
    </div>
    <p>{{cazare.description}}</p>
+   <button type="button" style="color:black; width:100px; background: rgb(246, 231, 203); border-radius:4px; border: 1px solid; border-color:orange; box-shadow: 2px 2px; float:right;">Rezerva cazarea</button>
+   <button type="button" style="color:black; width:100px; background: rgb(246, 231, 203); border-radius:4px; border: 1px solid; border-color:orange; box-shadow: 2px 2px; float:right; margin-right:5px">Suna vanzatorul</button>
 </div>
 </div>
 
