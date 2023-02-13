@@ -15,7 +15,7 @@ def index(request):
 
 def register(request):
     if request.method == 'POST':
-        realname = request.POST['realname']
+        first_name = request.POST['first_name']
         username = request.POST['username']
         email = request.POST['email']
         password = request.POST['password']
@@ -28,12 +28,12 @@ def register(request):
             elif User.objects.filter(username=username).exists():
                 messages.info(request, 'Username already used')
                 return redirect('register')
-            elif User.objects.filter(realname=realname).exists():
+            elif User.objects.filter(first_name=first_name).exists():
                 messages.info(request, 'Name already used')
                 return redirect('register')
             else:
                 user = User.objects.create_user(
-                    realname=realname, username=username, email=email, password=password)
+                    first_name=first_name, username=username, email=email, password=password)
                 user.save()
             return redirect('login')
         else:
