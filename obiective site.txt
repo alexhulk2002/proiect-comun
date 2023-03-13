@@ -1,0 +1,8 @@
+1 de facut filtrele pentru cazare
+2 de facut prezentarea cazarii asa cum trebuie
+3 de modificat adaugarea de cazare dupa ce se indeplinesc pasii 1 si 2 
+4 de facut pagina sau pop up window pentru rezervarea cazarii 
+5 de facut pagina de intampinare
+6 de facut un loading screen
+7 de facut footer sau pagina cu date de contact catre noi
+
