@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HAHA</title>
+  <title>Document</title>
   <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link
 href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -23,10 +23,7 @@ rel="stylesheet"
   <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
   <div class="center_topnav">
     <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
-    <form class="search-form" method=POST action="{% url 'search' %}">
-      {% csrf_token %}
-      <input type="search" placeholder="Search" name="searched" class="search small-search">
-    </form>
+
   </div>
   <div class="dropdown">
     {%if user.is_authenticated%}
@@ -45,49 +42,13 @@ rel="stylesheet"
       </div>
   </div>
 </div>
-<aside class="sidenav mani" id="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <br>
-  <div class="filtre1">    
-  <h3 class="filtre">Numar de persoane</h3>
-      <ul class="liste">
-        <li><label> copii </label><input type="text" style="width: 24px;"> </li>
-        <li><label> adulti </label><input type="text" style="width: 24px;"> </li>
-      </ul>
-      <h3 class="filtre">Tip cazare</h3>
-      <ul class="liste">
-        <div><li><input type="checkbox"><label>hotel</label></li></div>
-        <div><li><input type="checkbox"><label>pensiune</label></li></div>
-        <div><li><input type="checkbox"><label>motel</label></li></div>
-        <div><li><input type="checkbox"><label>apartament</label></li></div>
-        <div><li><input type="checkbox"><label>gazda</label></li></div>
-      </ul>
-  <h3 class="filtre">Filtre:</h3>
-  <h4 type="button" class="button filtre">Camere</h4>
-  <div class="content3">
-    <ul class="liste">
-    <div><li><input type="checkbox"><label>o camera</label></li></div>
-    <div><li><input type="checkbox"><label>doua camere</label></li></div>
-    <div><li><input type="checkbox"><label>trei camere</label></li></div>
-    <div><li><input type="checkbox"><label>patru camere</label></li></div>
-    </ul>
-  </div>
-  <h4 type="button" class="button filtre">Rating</h4>
-  <div class="content3">
-    <ul class="liste">
-      <div><li><input type="checkbox"><label>5 stele</label></li></div>
-      <div><li><input type="checkbox"><label>4 stele</label></li></div>
-      <div><li><input type="checkbox"><label>3 stele</label></li></div>
-      <div><li><input type="checkbox"><label>2 stele</label></li></div>
-      <div><li><input type="checkbox"><label>1 stea</label></li></div>
-    </ul>
-  </div>
-</aside>
-<div class="in main" id="in">
-  <div class="content">
-    <h2>Sidebar</h2>
-    <p>This sidebar is of full height (100%) and always shown.</p>
-    <p>Scroll down the page to see the result.</p>
+<h3 style="margin-top:100px; width:300px;">Acest site este in dezvoltare!!!</h3>
+<div class="text">Unde dorești să te cazezi?</div>
+<form class="search-form" method=POST action="{% url 'search' %}">
+    {% csrf_token %}
+    <input type="search" placeholder="Caută orașul" name="searched" class="search1 small-search1">
+</form>
+<div class="text1">Vezi cazari recente:</div>
     {% for inf in cazare %}
     <div class="results">
       <a class="res" href="/cazare/{{inf.id}}">
@@ -100,15 +61,29 @@ rel="stylesheet"
       </a>
     </div>
     {% endfor %}
-  </div>
+    
+<div class="text1">Cazari apreciate:</div>
+    {% for inf in cazare %}
+    <div class="results">
+      <a class="res" href="/cazare/{{inf.id}}">
+        <img class="offerimg" src="{{inf.photos}}" alt="">
+        <div class="prezentare">
+          <h2 href="cazare">{{inf.title}}</h2>
+          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+          <p>{{inf.description|truncatewords:20}}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
   <footer class="in2">
     <div>
-      <p>
+      <p class="i">
       phone number=0755607714
       </p>
     </div>
   </footer>
 </div>
+
 <script><!--dropdown button-->
   var coll = document.getElementsByClassName("button");
   var i;
@@ -118,7 +93,7 @@ rel="stylesheet"
      this.classList.toggle("active1");
      var content = this.nextElementSibling;
      if (content.style.display === "block") {
-       content.style.display = "initial";
+       content.style.display = "none";
      } else {
        content.style.display = "block";
      }
@@ -131,7 +106,7 @@ rel="stylesheet"
       document.getElementById("in").style.marginLeft = "320px";
       document.getElementById("openbtn").style.display = "none";
       if (screen.width<=950) {
-      document.getElementById("in").style.marginTop = "140px";
+      document.getElementById("in").style.display = "none";
       }
       else{
       document.getElementById("in").style.marginLeft = "320px";
@@ -144,5 +119,6 @@ rel="stylesheet"
       document.getElementById("openbtn").style.display = "initial";
     }
     </script>
+
 </body>
 </html>
