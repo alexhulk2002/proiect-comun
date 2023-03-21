@@ -320,8 +320,7 @@ input{
 }
 
 .results{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     box-shadow: 2px 2px 2px 2px #000000;
     background-color:rgba(141, 88, 51, 0.6);
     margin-top: 10px;
@@ -351,11 +350,12 @@ input{
 .offerimg {
     width: 200px;
     height: 150px;
-    border: 2px solid white;
+    
     border-radius: 4px;
 }
 
 .prezentare{
+  padding-left: 10px;
   margin: 0px 0px 0px 0px;
   width: 600px;
   word-wrap: normal;
