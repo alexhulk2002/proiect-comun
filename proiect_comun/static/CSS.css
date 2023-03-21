@@ -9,14 +9,13 @@
 
 
 body {
-  background-image: url("img/nature_landscape_trees_forest_house_village_mountains_clouds-1781583.jpg");
+  background-color: rgb(113, 119, 68);
   size: adjust 10px;
   margin:0;
   padding:0;
   font-family: sans-serif;
   background-size: cover;
   background-attachment: fixed;
-  background-color:rgba(69, 69, 69, 0.8);
 }
 
 div {
@@ -654,7 +653,7 @@ html {
 @media screen and (max-width: 950px) {
   .text {
   font-size: 30px;
-  left: 10pxpx;
+  margin-left: 45px;
   width: 300px;
   }
 }
@@ -675,7 +674,7 @@ html {
   .search1 {
   width: 300px;
   height: 20px;
-  
+  margin-left: 195px;
   }
 }
 
@@ -683,7 +682,7 @@ html {
   .search1 {
   width: 800px;
   height: 40px;
-  margin-left: 650px;
+  margin-left: 950px;
   }
 }
 
