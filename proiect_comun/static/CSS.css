@@ -9,7 +9,7 @@
 
 
 body {
-  background-color: rgb(124, 181, 24);
+  background-color: rgb(221, 161, 94);
   size: adjust 10px;
   margin:0;
   padding:0;
@@ -47,7 +47,7 @@ div {
   width: 100%;
   z-index: 2;
   display: flex;
-  background-image: linear-gradient(rgba(224, 186, 75, 0.5), rgba(239, 112, 22, 0.5), rgba(239, 112, 22, 0.5), rgba(224, 186, 75, 0.5));
+  background-image: linear-gradient(rgb(254, 250, 224), rgb(221, 161, 94), rgb(221, 161, 94), rgb(254, 250, 224));
   align-items: center;
   justify-content: space-between;
   padding: left 10px;
@@ -56,7 +56,7 @@ div {
 .active {
   position: relative;
   color: white;
-  border:0px solid rgb(167, 201, 87);
+  border:0px solid rgb(96, 108, 56);
   height: 100px;
   display: flex;
   width: fit-content;
@@ -71,7 +71,6 @@ div {
 
 .slogan{
   color: rgb(188, 71, 73);
-  
 }
 .center_topnav{
   justify-content: center;
@@ -115,7 +114,7 @@ div {
 }
 
 .dropbtn {
-  background-color: #6A994E;
+  background-color: rgb(96, 108, 56);
   color: #F2E8CF;
   padding: 14px;
   font-size: 16px;
@@ -147,11 +146,11 @@ div {
   border-radius: 6px;
 }
 
-.dropdown-content b:hover {background-color: #6A994E;}
+.dropdown-content b:hover {background-color: rgb(40, 54, 24);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #A7C957;}
+.dropdown:hover .dropbtn {background-color: rgb(96, 108, 56);}
 
 .topnav .user:hover {
   color: rgb(255, 253, 253);
@@ -182,7 +181,7 @@ div {
   position: fixed;
   width: 300px;
   left: 0;
-  background-image: linear-gradient(rgba(224, 186, 75, 0.5), rgba(239, 112, 22, 0.5), rgba(239, 112, 22, 0.5), rgba(224, 186, 75, 0.5));
+  background-image: linear-gradient(rgba(221, 161, 94), rgba(188, 108, 37), rgba(188, 108, 37), rgba(221, 161, 94));
   float: left;
   box-shadow: 0 0 30px rgb(0, 0, 0);
   margin-left: 0;
