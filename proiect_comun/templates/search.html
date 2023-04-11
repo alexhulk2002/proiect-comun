@@ -25,7 +25,7 @@ rel="stylesheet"
     <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
     <form class="search-form" method=POST action="{% url 'search' %}">
       {% csrf_token %}
-      <input type="search" placeholder="Search" name="searched" class="search small-search">
+      <input type="text" name="text" class="search search1" placeholder="Type here...">
     </form>
   </div>
   <div class="dropdown">
