@@ -22,8 +22,7 @@
       </a>
       <div class="center_topnav">
         <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
-        <input type="text" name="text" class="search search1" placeholder="Type here...">
-        <form class="search-form" method="POST" action="{% url 'search' %}">
+        <form class="search-form " method="POST" action="{% url 'search' %}">
           {% csrf_token %}
           <input type="text" name="text" class="search search1" placeholder="Type here...">
         </form>

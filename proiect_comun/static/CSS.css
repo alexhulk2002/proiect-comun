@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(254, 250, 224);
+  background-color: rgb(221, 229, 182);
   size: adjust 10px;
   margin: 0;
   padding: 0;
@@ -45,10 +45,10 @@ div {
   z-index: 2;
   display: flex;
   background-image: linear-gradient(
-    rgb(254, 250, 224),
-    rgb(221, 161, 94),
-    rgb(221, 161, 94),
-    rgb(254, 250, 224)
+    rgb(173, 193, 120),
+    rgb(221, 229, 182),
+    rgb(221, 229, 182),
+    rgb(173, 193, 120)
   );
   align-items: center;
   justify-content: space-between;
@@ -72,7 +72,8 @@ div {
 }
 
 .slogan {
-  color: rgb(188, 71, 73);
+  color: rgb(188, 108, 37);
+  text-align: center;
 }
 .center_topnav {
   justify-content: center;
@@ -82,16 +83,12 @@ div {
   flex-direction: column;
 }
 
-.search-form {
-  align-self: center;
-}
 .search {
   border: none;
   border-radius: 1rem;
   background: #e8e8e8;
   box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
   transition: 0.3s;
-  align-items: center;
 }
 
 .search:focus {
@@ -186,10 +183,10 @@ div {
   width: 300px;
   left: 0;
   background-image: linear-gradient(
-    rgba(221, 161, 94),
-    rgba(188, 108, 37),
-    rgba(188, 108, 37),
-    rgba(221, 161, 94)
+    rgba(173, 193, 120),
+    rgba(96, 108, 56),
+    rgba(96, 108, 56),
+    rgba(173, 193, 120)
   );
   float: left;
   box-shadow: 0 0 30px rgb(0, 0, 0);
@@ -309,7 +306,8 @@ input {
 
 .in2 {
   margin-left: -20px;
-  margin-top: 100px;
+  width: 20000px;
+  bottom: 200px;
 }
 
 .main {
@@ -332,7 +330,7 @@ input {
 .results {
   padding: 10px;
   box-shadow: 2px 2px 2px 2px #000000;
-  background-color: rgba(141, 88, 51, 0.6);
+  background-color: rgba(173, 193, 120);
   margin-top: 10px;
   border-radius: 4px;
   display: flex;
@@ -358,8 +356,6 @@ input {
 .offerimg {
   width: 200px;
   height: 150px;
-
-  border-radius: 4px;
 }
 
 .prezentare {
@@ -404,10 +400,10 @@ html {
   padding: 40px;
   transform: translate(-50%, -50%);
   background-image: linear-gradient(
-    rgba(224, 186, 75, 0.5),
-    rgba(239, 112, 22, 0.5),
-    rgba(239, 112, 22, 0.5),
-    rgba(224, 186, 75, 0.5)
+    rgb(221, 229, 182),
+    rgb(173, 193, 120),
+    rgb(173, 193, 120),
+    rgb(221, 229, 182)
   );
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 6);
@@ -665,12 +661,6 @@ html {
   }
 }
 
-@media screen and (max-width: 950px) {
-  .search-form {
-    width: 300px;
-  }
-}
-
 @media screen and (min-width: 951px) {
   .text {
     font-size: 70px;
@@ -681,7 +671,6 @@ html {
   .search1 {
     width: 300px;
     height: 20px;
-    margin-left: 195px;
   }
 }
 
@@ -689,8 +678,6 @@ html {
   .search1 {
     width: 800px;
     height: 40px;
-    display: flex;
-    align-items: center;
   }
 }
 
@@ -706,12 +693,16 @@ html {
   background: transparent;
 }
 
+.search2 {
+  
+}
+
 /* ========= main ============*/
 
 .text {
   z-index: 2;
   text-align: center;
-  color: yellow;
+  color: rgb(170, 204, 0);
 }
 
 .i {
