@@ -1,63 +1,97 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://fonts.gstatic.com" rel="preconnect" />
-  <link
-href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-rel="stylesheet"
-/>
-<link rel="stylesheet" href="{% static 'CSS.css' %}">
-  <title>Document</title>
-</head>
-<body>
-  <div class="topnav" >
-    <a class="active" href="/" style="display:flex ;">
-      <img id="logo" src="{% static 'img/2-removebg.png' %}" height="100px">
-      <h1 class="logo hidden-mobile">HAHA</h1>
-    </a>
-    <div class="center_topnav">
-      <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
-    <form class="search-form" method=POST action="{% url 'search' %}">
-      {% csrf_token %}
-      <input type="search" placeholder="Search" name="searched" class="search small-search">
-      </form>
-    </div>
-    <div class="dropdown">
-      {%if user.is_authenticated%}
-      <button class="dropbtn" href="#">{{user.username}}</button>
-      {%else%}
-      <button class="dropbtn" href="#">User</button>
-      {%endif%}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'CSS.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="/" style="display: flex">
+        <img id="logo" src="{% static 'img/2-removebg.png' %}" height="100px" />
+        <h1 class="logo hidden-mobile">HAHA</h1>
+      </a>
+      <div class="center_topnav">
+        <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
+        <form class="search-form " method="POST" action="{% url 'search' %}">
+          {% csrf_token %}
+          <input type="text" name="text" class="search search1" placeholder="Type here...">
+        </form>
+      </div>
+      <div class="dropdown">
+        {%if user.is_authenticated%}
+        <button class="dropbtn" href="#">{{user.username}}</button>
+        {%else%}
+        <button class="dropbtn" href="#">User</button>
+        {%endif%}
         <div class="dropdown-content">
           <a href="/user"><b href="">User Info</b></a>
           <a href="/new"><b href="">Aduga cazare</b></a>
           {%if user.is_authenticated%}
-          <a href="logout"><b href="logout" style="color:red" >Logout</b></a>
+          <a href="logout"><b href="logout" style="color: red">Logout</b></a>
           {%else%}
-          <a href="login"><b href="login" style="color:red" >Login or signup</b></a>
+          <a href="login"
+            ><b href="login" style="color: red">Login or signup</b></a
+          >
           {%endif%}
         </div>
+      </div>
     </div>
-  </div>
-<div class="main in1">
-  <div class="results1">
-   <h1>{{cazare.title}}</h1>
-   <a class="adress" href="{{cazare.adresa}}">
-     <p>Arata pe harta</p>
-   </a>
-   <div class="images">
-     <img class="offerimg" src="{{cazare.photos.url}}" style="width:250px; height: 250px;"/>
-   </div>
-   <p>{{cazare.description}}</p>
-   <button type="button" style="color:black; width:100px; background: rgb(246, 231, 203); border-radius:4px; border: 1px solid; border-color:orange; box-shadow: 2px 2px; float:right;">Rezerva cazarea</button>
-   <button type="button" style="color:black; width:100px; background: rgb(246, 231, 203); border-radius:4px; border: 1px solid; border-color:orange; box-shadow: 2px 2px; float:right; margin-right:5px">Suna vanzatorul</button>
-</div>
-</div>
-
-</body>
+    <div class="main in1">
+      <div class="results1">
+        <h1>{{cazare.title}}</h1>
+        <a class="adress" href="{{cazare.adresa}}">
+          <p>Arata pe harta</p>
+        </a>
+        <div class="images">
+          <img
+            class="offerimg"
+            src="{{cazare.photos.url}}"
+            style="width: 250px; height: 250px"
+          />
+        </div>
+        <p>{{cazare.description}}</p>
+        <button
+          type="button"
+          style="
+            color: black;
+            width: 100px;
+            background: rgb(246, 231, 203);
+            border-radius: 4px;
+            border: 1px solid;
+            border-color: orange;
+            box-shadow: 2px 2px;
+            float: right;
+          "
+        >
+          Rezerva cazarea
+        </button>
+        <button
+          type="button"
+          style="
+            color: black;
+            width: 100px;
+            background: rgb(246, 231, 203);
+            border-radius: 4px;
+            border: 1px solid;
+            border-color: orange;
+            box-shadow: 2px 2px;
+            float: right;
+            margin-right: 5px;
+          "
+        >
+          Suna vanzatorul
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
