@@ -67,7 +67,7 @@ div {
 }
 
 .slogan {
-  color: rgb(188, 108, 37);
+  color: #1A4301;
   text-align: center;
 }
 .center_topnav {
@@ -287,12 +287,11 @@ input {
 }
 
 .container{
-  display: flex;
-  flex-wrap: Wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding: 30px;
-  height: max-content;
+  display: grid;
+  width: 540px;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .active1,
@@ -338,14 +337,13 @@ input {
 .results {
   box-shadow: 2px 2px 2px 2px #000000;
   background-color: rgba(173, 193, 120);
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 300px;
   width: 300px;
-  border-radius: 20px;
-  margin: 1rem;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
+  display: block;
 }
 
 .results1 {
