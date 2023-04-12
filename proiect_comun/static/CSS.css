@@ -4,10 +4,11 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-  color: #fff;
+  color: black;
 }
 
 body {
+  background-color: rgb(221, 229, 182);
   size: adjust 10px;
   margin: 0;
   padding: 0;
@@ -43,6 +44,12 @@ div {
   width: 100%;
   z-index: 2;
   display: flex;
+  background-image: linear-gradient(
+    rgb(173, 193, 120),
+    rgb(221, 229, 182),
+    rgb(221, 229, 182),
+    rgb(173, 193, 120)
+  );
   align-items: center;
   justify-content: space-between;
   flex-grow: 0.5 1 0.5;
@@ -64,7 +71,7 @@ div {
 }
 
 .slogan {
-  color: black;
+  color: rgb(188, 108, 37);
   text-align: center;
 }
 .center_topnav {
@@ -284,6 +291,14 @@ input {
   transition: 0.5s;
 }
 
+.container{
+  display: grid;
+  width: 540px;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
+}
+
 .active1,
 .button:hover {
   transition: 0.5s;
@@ -298,9 +313,13 @@ input {
 }
 
 .in2 {
-  margin-left: -20px;
   width: 20000px;
-  bottom: 200px;
+  position: fixed ;
+  bottom: 0;
+  height: 40px;
+  left: -300px;
+  z-index: 5;
+  background-color: #6a994e;
 }
 
 .main {
@@ -321,13 +340,15 @@ input {
 }
 
 .results {
-  padding: 10px;
   box-shadow: 2px 2px 2px 2px #000000;
   background-color: rgba(173, 193, 120);
-  margin-top: 10px;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
+  display: block;
 }
 
 .results1 {
@@ -687,7 +708,9 @@ html {
 }
 
 .search2 {
-  
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
 }
 
 /* ========= main ============*/
@@ -699,7 +722,11 @@ html {
 }
 
 .i {
-  margin-left: 20px;
+  display: none;
+}
+
+.in3 {
+  background-color: transparent;
 }
 
 .search1 {

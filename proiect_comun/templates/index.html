@@ -45,13 +45,13 @@ rel="stylesheet"
   </div>
 </div>
 <h3 style="margin-top:100px; width:300px;">Acest site este in dezvoltare!!!</h3>
-<div class="text">Unde dorești să te cazezi?</div>
 <form class="search_form search2" method=POST action="{% url 'search' %}">
     {% csrf_token %}
     <input type="text" name="text" class="search search1" placeholder="Type here...">
 </form>
 <div class="text1">Vezi cazari recente:</div>
     {% for inf in cazare %}
+  <div class="container">
     <div class="results">
       <a class="res" href="/cazare/{{inf.id}}">
         <img class="offerimg" src="{{inf.photos}}" alt="">
@@ -62,6 +62,7 @@ rel="stylesheet"
         </div>
       </a>
     </div>
+  </div>
     {% endfor %}
     
 <div class="text1">Cazari apreciate:</div>
@@ -77,7 +78,7 @@ rel="stylesheet"
       </a>
     </div>
     {% endfor %}
-  <footer class="in2">
+  <footer class="in2 in3">
     <div>
       <p class="i">
       phone number=0755607714
