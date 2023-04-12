@@ -76,7 +76,7 @@ div {
 }
 .center_topnav {
   justify-content: center;
-  align-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -90,6 +90,8 @@ div {
   transition: 0.3s;
   justify-content: center;
   display: flex;
+  max-width: 400px;
+  height: 0.5rem;
 }
 
 .search:focus {
@@ -715,7 +717,6 @@ html {
 .search2 {
   justify-content: center;
   display: flex;
-  margin-top: 50px;
 }
 
 /* ========= main ============*/
@@ -735,7 +736,7 @@ html {
 }
 
 .search1 {
-  transform: translate(-50%, 0);
+
   border: none;
   font-size: 18px;
   border-radius: 20px;
