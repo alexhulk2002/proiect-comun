@@ -84,6 +84,8 @@ div {
   background: #e8e8e8;
   box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
   transition: 0.3s;
+  justify-content: center;
+  display: flex;
 }
 
 .search:focus {
@@ -680,6 +682,8 @@ html {
   .search1 {
     width: 300px;
     height: 20px;
+    justify-content: center;
+    display: flex;
   }
 }
 
@@ -687,6 +691,7 @@ html {
   .search1 {
     width: 800px;
     height: 40px;
+    
   }
 }
 
@@ -725,7 +730,6 @@ html {
 }
 
 .search1 {
-  padding-left: 15px;
   transform: translate(-50%, 0);
   border: none;
   font-size: 18px;
