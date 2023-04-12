@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #faf0ca;
+  background-color: rgb(221, 229, 182);
   size: adjust 10px;
   margin: 0;
   padding: 0;
@@ -35,7 +35,7 @@ div {
 /*============== Header pagina==========*/
 
 .topnav {
-  position: fixed;
+  position: sticky;
   top: 0;
   margin: 0 0px;
   height: 100px;
@@ -44,19 +44,23 @@ div {
   width: 100%;
   z-index: 2;
   display: flex;
-  background-color: rgb(170, 213, 118);
+  background-image: linear-gradient(
+    rgb(173, 193, 120),
+    rgb(221, 229, 182),
+    rgb(221, 229, 182),
+    rgb(173, 193, 120)
+  );
   align-items: center;
   justify-content: space-between;
-  padding: left 10px;
+  flex-grow: 0.5 1 0.5;
+  flex-shrink: 2 1 2 ;
 }
 
 .active {
   position: relative;
-  color: white;
-  border: 0px solid rgb(96, 108, 56);
   height: 100px;
   display: flex;
-  width: fit-content;
+  flex-basis: 300px;
 }
 
 .logo {
@@ -67,7 +71,7 @@ div {
 }
 
 .slogan {
-  color: #1A4301;
+  color: rgb(188, 108, 37);
   text-align: center;
 }
 .center_topnav {
@@ -96,18 +100,19 @@ div {
 }
 
 .dropdown {
+  flex-basis: 300px;
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   z-index: 3;
   cursor: pointer;
-  align-self: flex-start;
-  margin-top: 10px;
-  margin-right: 10px;
 }
 
 .dropbtn {
   background-color: rgb(96, 108, 56);
   color: #f2e8cf;
+  margin: 1em;
   padding: 14px;
   font-size: 16px;
   border: none;

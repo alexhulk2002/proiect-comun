@@ -16,15 +16,17 @@ rel="stylesheet"
 </head>
 <body>
 <div class="topnav" >
-  <a class="active" href="/" style="display:flex ;">
+  <a class="active" href="/" >
     <img id="logo" src="{% static 'img/2-removebg.png' %}" height="100px">
     <h1 class="logo hidden-mobile">HAHA</h1>
   </a>
   <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+
   <div class="center_topnav">
     <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
 
   </div>
+  
   <div class="dropdown">
     {%if user.is_authenticated%}
     <button class="dropbtn">{{user.username}}</button>
