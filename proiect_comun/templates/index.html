@@ -49,6 +49,7 @@ rel="stylesheet"
 </form>
 <div class="text1">Vezi cazari recente:</div>
     {% for inf in cazare %}
+  <div class="container">
     <div class="results">
       <a class="res" href="/cazare/{{inf.id}}">
         <img class="offerimg" src="{{inf.photos}}" alt="">
@@ -59,6 +60,7 @@ rel="stylesheet"
         </div>
       </a>
     </div>
+  </div>
     {% endfor %}
     
 <div class="text1">Cazari apreciate:</div>

@@ -286,6 +286,15 @@ input {
   transition: 0.5s;
 }
 
+.container{
+  display: flex;
+  flex-wrap: Wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  height: max-content;
+}
+
 .active1,
 .button:hover {
   transition: 0.5s;
@@ -327,13 +336,16 @@ input {
 }
 
 .results {
-  padding: 10px;
   box-shadow: 2px 2px 2px 2px #000000;
   background-color: rgba(173, 193, 120);
   margin-top: 10px;
-  border-radius: 4px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 1rem;
 }
 
 .results1 {
