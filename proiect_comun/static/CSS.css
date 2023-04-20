@@ -296,12 +296,6 @@ input {
 }
 
 .container{
-  display: grid;
-  width: 540px;
-  grid-template-columns: 120px 120px 120px;
-  align-items: start;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
 .active1,
@@ -339,8 +333,7 @@ input {
 }
 
 .content1 {
-  text-align: justify;
-  text-justify: inter-word;
+  
   margin-left: 320px;
 }
 
@@ -349,11 +342,6 @@ input {
   background-color: rgba(173, 193, 120);
   height: 300px;
   width: 300px;
-  display: grid;
-  grid-template-columns: 120px 120px 120px;
-  align-items: start;
-  justify-content: space-between;
-  display: block;
 }
 
 .results1 {
