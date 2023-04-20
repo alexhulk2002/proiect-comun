@@ -698,7 +698,7 @@ html {
 .search2 {
   justify-content: center;
   display: flex;
-  width: px;
+  margin-top: 100px;
 }
 
 /* ========= main ============*/
@@ -720,7 +720,7 @@ html {
 
 .text1 {
   font-size: 40px;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-left: 10px;
 }
 
