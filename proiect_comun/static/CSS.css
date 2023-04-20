@@ -69,6 +69,7 @@ div {
   text-align: center;
   text-shadow: 3px 3px 4px black;
 }
+
 .center_topnav {
   justify-content: center;
   align-items: center;
@@ -350,10 +351,12 @@ input {
 .results {
   box-shadow: 2px 2px 2px 2px #000000;
   background-color: rgba(173, 193, 120);
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+  width: 98%;
+  margin-left: 10px;
   display: flex;
-  flex-direction: row;
+  border-radius: 10px;
 }
 
 .results1 {
@@ -374,6 +377,7 @@ input {
 .offerimg {
   width: 200px;
   height: 150px;
+  border-radius: 10px;
 }
 
 .prezentare {
