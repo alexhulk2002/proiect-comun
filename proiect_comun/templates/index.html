@@ -23,7 +23,7 @@ rel="stylesheet"
   <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
 
   <div class="center_topnav">
-    <h1 class="slogan hidden-text">Gasiti cazare instant la orice ora</h1>
+    <h1 class="slogan hidden-text">Găsiti cazare instant la orice oră</h1>
 
   </div>
   
@@ -31,11 +31,11 @@ rel="stylesheet"
     {%if user.is_authenticated%}
     <button class="dropbtn">{{user.username}}</button>
     {%else%}
-    <button class="dropbtn">User</button>
+    <button class="dropbtn">Utilizator</button>
     {%endif%}
       <div class="dropdown-content">
-        <a href="user"><b href="user">User Info</b></a>
-        <a href="new"><b href="new">Aduga cazare</b></a>
+        <a href="user"><b href="user">Informații utilizator</b></a>
+        <a href="new"><b href="new">Adugă cazare</b></a>
         {%if user.is_authenticated%}
         <a href="logout"><b href="logout" style="color:red" >Logout</b></a>
         {%else%}
@@ -44,12 +44,12 @@ rel="stylesheet"
       </div>
   </div>
 </div>
-<h3 style="width:300px;">Acest site este in dezvoltare!!!</h3>
+<h3 style="width:300px;">Acest site este în dezvoltare!!!</h3>
 <form class="search2" method=POST action="{% url 'search' %}">
     {% csrf_token %}
     <input type="text" name="text" class="search search1" placeholder="Type here...">
 </form>
-<div class="text1">Vezi cazari recente:</div>
+<div class="text1">Vezi cazări recente:</div>
 {% for inf in cazare %}
 <div class="results">
   <a class="res" href="/cazare/{{inf.id}}">
@@ -63,7 +63,7 @@ rel="stylesheet"
 </div>
 {% endfor %}
     
-<div class="text1">Cazari apreciate:</div>
+<div class="text1">Cazări apreciate:</div>
 {% for inf in cazare %}
 <div class="results">
   <a class="res" href="/cazare/{{inf.id}}">
@@ -79,7 +79,7 @@ rel="stylesheet"
   <footer class="in3">
     <div>
       <p>
-      phone number=0755607714
+      telefon=0755607714
       </p>
     </div>
   </footer>

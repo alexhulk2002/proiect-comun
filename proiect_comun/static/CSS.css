@@ -116,6 +116,8 @@ div {
   box-sizing: border-box;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 6);
   border-radius: 10px;
+  transition: all;
+  transition: 1s;
 }
 
 .dropdown-content {
@@ -123,12 +125,15 @@ div {
   position: absolute;
   background-color: #f2e8cf;
   min-width: 160px;
+  top: 70px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 6);
   box-sizing: border-box;
   border-radius: 6px;
   z-index: 1;
-  left: -100px;
+  left: -80px;
   text-align: left;
+  transition: all;
+  transition: 1s;
 }
 
 .dropdown-content b {
@@ -141,7 +146,7 @@ div {
 }
 
 .dropdown-content b:hover {
-  background-color: rgb(40, 54, 24);
+  background-color: rgb(221, 229, 182);
 }
 
 .dropdown:hover .dropdown-content {
@@ -149,7 +154,7 @@ div {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: rgb(96, 108, 56);
+  background-color: rgb(173, 193, 120);
 }
 
 .topnav .user:hover {
