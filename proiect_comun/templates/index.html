@@ -50,35 +50,35 @@ rel="stylesheet"
     <input type="text" name="text" class="search search1" placeholder="Type here...">
 </form>
 <div class="text1">Vezi cazari recente:</div>
-    {% for inf in cazare %}
-    <div class="results">
-      <a class="res" href="/cazare/{{inf.id}}">
-        <img class="offerimg" src="{{inf.photos}}" alt="">
-        <div class="prezentare">
-          <h2 href="cazare">{{inf.title}}</h2>
-          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
-          <p>{{inf.description|truncatewords:20}}</p>
-        </div>
-      </a>
+{% for inf in cazare %}
+<div class="results">
+  <a class="res" href="/cazare/{{inf.id}}">
+    <img class="offerimg" src="{{inf.photos}}" alt="">
+    <div class="prezentare">
+      <h2 href="cazare">{{inf.title}}</h2>
+      <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+      <p>{{inf.description|truncatewords:20}}</p>
     </div>
-    {% endfor %}
+  </a>
+</div>
+{% endfor %}
     
 <div class="text1">Cazari apreciate:</div>
-    {% for inf in cazare %}
-    <div class="results">
-      <a class="res" href="/cazare/{{inf.id}}">
-        <img class="offerimg" src="{{inf.photos}}" alt="">
-        <div class="prezentare">
-          <h2 href="cazare">{{inf.title}}</h2>
-          <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
-          <p>{{inf.description|truncatewords:20}}</p>
-        </div>
-      </a>
+{% for inf in cazare %}
+<div class="results">
+  <a class="res" href="/cazare/{{inf.id}}">
+    <img class="offerimg" src="{{inf.photos}}" alt="">
+    <div class="prezentare">
+      <h2 href="cazare">{{inf.title}}</h2>
+      <a href="{{inf.adresa}}" class="adress">{{inf.adresa}}</a>
+      <p>{{inf.description|truncatewords:20}}</p>
     </div>
-    {% endfor %}
-  <footer class="in2 in3">
+  </a>
+</div>
+{% endfor %}
+  <footer class="in3">
     <div>
-      <p class="i">
+      <p>
       phone number=0755607714
       </p>
     </div>
